@@ -9,7 +9,6 @@ Portfolio(userId:number, id:number)
 
 Stock(last:number, 
       first:number, 
-      last:number, 
       count:number, 
       symbol:string)
 

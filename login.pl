@@ -8,5 +8,5 @@ print "<body>";
 
 
 
+require "footer.pl";
 
-print "</body>";

@@ -9,7 +9,7 @@ print "Content-type: text/html\n\n";
 
 print "<html>";
 print "<head>";
-print "<title>Red, White, and Blue</title>";
+print "<title>Portfolio</title>";
 print "</head>";
 
 print "<body>";

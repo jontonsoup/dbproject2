@@ -3,9 +3,9 @@
 ## The Schema
 
 ```
-User(id:number, email:string, password:string)
-
-Portfolio(userId:number, id:number)
+User(id:number, 
+     email:string, 
+     password:string)
 
 Stock(last:number, 
       first:number, 
@@ -27,5 +27,13 @@ Transaction(timestamp:number,
             portfolioId:number, 
             userId:number,
             stockSymbol:string)
+
+HasTransaction(userId:number,
+               transactionTimestamp:number,
+               stockSymbol:string)
+
+HasStock(userId:number,
+         stockSymbol:string,
+         amount:number)
 ```
 

@@ -141,9 +141,9 @@ print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <div class=\"navbar-inner\">
 <a class=\"brand\" href=\"#\">Portfolioliolio</a>
 <ul class=\"nav\">
-<li class=\"active\"><a href=\"#\">Home</a></li>
-<li><a href=\"#\">Link</a></li>
-<li><a href=\"#\">Link</a></li>
+<li ><a href=\"\">Home</a></li>
+<li><a href=\"login.pl\">Login</a></li>
+<li><a href=\"register.pl\">Register</a></li>
 </ul>
 </div>
 </div>";

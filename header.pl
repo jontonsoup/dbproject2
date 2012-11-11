@@ -9,8 +9,8 @@ use Time::ParseDate;
 $debug=1;
 @sqlinput=();
 @sqloutput=();
-$dbuser="jmf716";
-$dbpasswd="RR62rwno";
+$dbuser="gsi669";
+$dbpasswd="z1OlkliU6";
 
 sub MakeTable {
   my ($id,$type,$headerlistref,@list)=@_;

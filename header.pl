@@ -12,6 +12,29 @@ $debug=1;
 $dbuser="gsi669";
 $dbpasswd="z1OlkliU6";
 
+
+
+#
+# The session cookie will contain the user's name and password so that
+# he doesn't have to type it again and again.
+#
+# "PSession"=>"user/password"
+#
+# BOTH ARE UNENCRYPTED AND THE SCRIPT IS ALLOWED TO BE RUN OVER HTTP
+# THIS IS FOR ILLUSTRATION PURPOSES.  IN REALITY YOU WOULD ENCRYPT THE COOKIE
+# AND CONSIDER SUPPORTING ONLY HTTPS
+
+my $cookiename = "PSession";
+my $debugcookiename = "PDebugSession"
+
+# grab session input cookie, if any; also, debug cookie, if any
+my $inputcookiecontent = cookie($cookiename);
+my $inputdebugcookiecontent = cookie($debugcookiename);
+
+
+
+
+
 sub MakeTable {
   my ($id,$type,$headerlistref,@list)=@_;
   my $out;

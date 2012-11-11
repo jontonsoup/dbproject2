@@ -2,6 +2,7 @@ CREATE TABLE stockuser
 (
 	email varchar(100) NOT NULL,
 	password varchar(50) NOT NULL,
+	cash_holdings INTEGER NOT NULL,
 	PRIMARY KEY (email)
 );
 

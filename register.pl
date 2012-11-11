@@ -5,7 +5,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   my $user = param("user");
   my $pass = param("password");
   my @rows;
-  eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values (?, ?)", undef, $user, $pass);};
+  eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password, cash_holdings) values (?, ?, ?)", undef, $user, $pass, 100000);};
   if ($@) {
     print "there was an error";
   } else {

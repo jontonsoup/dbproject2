@@ -9,24 +9,24 @@ sub ValidUser {
 
   if ($@) {
     return 0;
-    } else {
-      return $col[0]>0;
-	}
+  } else {
+    return $col[0]>0;
+  }
 }
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
-	my $user = param("user");
-	my $pass = param("password");
-	my @rows;
-	print ValidUser($user,$pass);
+  my $user = param("user");
+  my $pass = param("password");
+  my @rows;
+  print ValidUser($user,$pass);
 }
 
 else {
 
-	print start_form(-name=>'Login', -type=>"post"),
-	h2('Login!'), "<fieldset>",
-	"Name: ",textfield(-name=>'user'),"<br><br>",
-	"Password: ",password_field(-name=>'password'), "<br><br>";
-	print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+  print start_form(-name=>'Login', -type=>"post"),
+  h2('Login!'), "<fieldset>",
+  "Name: ",textfield(-name=>'user'),"<br><br>",
+  "Password: ",password_field(-name=>'password'), "<br><br>";
+  print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
 
 
 }

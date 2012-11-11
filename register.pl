@@ -5,7 +5,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	my $user = param("user");
 	my $pass = param("password");
 	my @rows;
-	eval { @rows = ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values ('$user', '$pass')");};
+	eval { @rows = ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values ('$user', '$pass')", undef);};
 	print "<h2>Thanks for Registering!</h2>";
 	print "<a href=\"home.pl\" class= \"btn\">Go Home!</a>";
 }

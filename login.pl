@@ -2,11 +2,22 @@
 require "header.pl";
 use Data::Dumper;
 
+sub ValidUser {
+  my ($user,$password)=@_;
+  my @col;
+  eval {@col=ExecSQL($dbuser,$dbpasswd, "select count(*) from stockuser where email='$user' and password='$password'",undef);};
+
+  if ($@) {
+    return 0;
+    } else {
+      return $col[0]>0;
+	}
+}
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	my $user = param("user");
 	my $pass = param("password");
 	my @rows;
-	# eval { @rows = ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values ('$user', '$pass')");};
+	print ValidUser($user,$pass);
 }
 
 else {

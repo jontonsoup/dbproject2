@@ -1,17 +1,16 @@
 #!/usr/bin/perl -w
 
-use strict;
 use CGI;
 use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
 use DBI;
 use Time::ParseDate;
 
-my $debug=1;
-my @sqlinput=();
-my @sqloutput=();
-my $dbuser="jmf716";
-my $dbpasswd="RR62rwno";
+$debug=1;
+@sqlinput=();
+@sqloutput=();
+$dbuser="jmf716";
+$dbpasswd="RR62rwno";
 
 sub MakeTable {
 	my ($id,$type,$headerlistref,@list)=@_;
@@ -64,35 +63,41 @@ sub ExecSQL {
   # global sqlinput list
   push @sqlinput, "$querystring (".join(",",map {"'$_'"} @fill).")";
 }
+print "connecting with $user, $passwd<br>";
 my $dbh = DBI->connect("DBI:Oracle:",$user,$passwd);
 if (not $dbh) {
+	print "failed";
   # if the connect failed, record the reason to the sqloutput list (if set)
   # and then die.
   if ($debug) {
   	push @sqloutput, "<b>ERROR: Can't connect to the database because of ".$DBI::errstr."</b>";
   }
-  die "Can't connect to database because of ".$DBI::errstr;
+   die "Can't connect to database because of ".$DBI::errstr;
 }
-my $sth = $dbh->prepare($querystring);
+print "prepare: $querystring";
+my $sth = $dbh->prepare($querystring) or die $DBI::errstr;
 if (not $sth) {
   #
   # If prepare failed, then record reason to sqloutput and then die
   #
-  if ($debug) {
-  	push @sqloutput, "<b>ERROR: Can't prepare '$querystring' because of ".$DBI::errstr."</b>";
-  }
+  print "failed";
+  push @sqloutput, "<b>ERROR: Can't prepare '$querystring' because of ".$DBI::errstr."</b>";
+
   my $errstr="Can't prepare $querystring because of ".$DBI::errstr;
   $dbh->disconnect();
   die $errstr;
 }
-if (not $sth->execute(@fill)) {
+print "fill: @fill";
+ if (not $sth->execute(@fill)) {
+	# if (not $sth->execute) {
+		print "failed";
   #
   # if exec failed, record to sqlout and die.
-  if ($debug) {
-  	push @sqloutput, "<b>ERROR: Can't execute '$querystring' with fill (".join(",",map {"'$_'"} @fill).") because of ".$DBI::errstr."</b>";
-  }
+
+  push @sqloutput, "<b>ERROR: Can't execute '$querystring' with fill (".join(",",map {"'$_'"} @fill).") because of ".$DBI::errstr."</b>";
+
   my $errstr="Can't execute $querystring with fill (".join(",",map {"'$_'"} @fill).") because of ".$DBI::errstr;
-  $dbh->disconnect();
+  $dbh->disconnect() or die $DBI::errstr;
   die $errstr;
 }
 #
@@ -119,7 +124,7 @@ if (defined $type and $type eq "COL") {
 	return @data;
 }
 $sth->finish();
-if ($debug) {push @sqloutput, MakeTable("debug_sql_output","2D",undef,@ret);}
+push @sqloutput, MakeTable("debug_sql_output","2D",undef,@ret);
 $dbh->disconnect();
 return @ret;
 }

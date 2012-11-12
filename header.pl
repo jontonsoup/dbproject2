@@ -30,7 +30,7 @@ my $debugcookiename = "PDebugSession";
 # grab session input cookie, if any; also, debug cookie, if any
 my $inputcookiecontent = cookie($cookiename);
 my $inputdebugcookiecontent = cookie($debugcookiename);
-
+my $login = cookie('login');
 
 
 
@@ -212,6 +212,16 @@ print "<div class=\"container\">";
 
 
 print "<div class=\"hero-unit\">";
+
+if(defined($login)){
+	print "defined";
+}
+else{
+	print "not defined";
+	require "login_register.pl";
+	die;
+}
+
 
 #
 # The following is necessary so that DBD::Oracle can

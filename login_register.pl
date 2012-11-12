@@ -26,7 +26,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 		"Name: ",textfield(-name=>'user'),"<br><br>",
 		"Password: ",password_field(-name=>'password'), "<br><br>";
 		print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
-
+		print "<br><br>";
 		print start_form(-name=>'Register', -type=>"post"),
 		h2('Register!'), "<fieldset>",
 		"Name: ",textfield(-name=>'user'),"<br><br>",

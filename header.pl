@@ -32,7 +32,17 @@ my $inputcookiecontent = cookie($cookiename);
 my $inputdebugcookiecontent = cookie($debugcookiename);
 my $login = cookie('login');
 
+sub ValidUser {
+	my ($user,$password)=@_;
+	my @col;
+	eval {@col=ExecSQL($dbuser,$dbpasswd, "select count(*) from stockuser where email='$user' and password='$password'",undef);};
 
+	if ($@) {
+		return 0;
+		} else {
+			return $col[0]>0;
+		}
+	}
 
 
 sub MakeTable {

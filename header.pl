@@ -9,8 +9,8 @@ use Time::ParseDate;
 $debug=1;
 @sqlinput=();
 @sqloutput=();
-$dbuser="gsi669";
-$dbpasswd="z1OlkliU6";
+$dbuser="jmf716";
+$dbpasswd="RR62rwno";
 
 
 
@@ -246,3 +246,4 @@ BEGIN {
 		exec 'env',cwd().'/'.$0,@ARGV;
 	}
 }
+1;

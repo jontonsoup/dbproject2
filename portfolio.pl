@@ -1,14 +1,15 @@
 #!/usr/bin/perl -w
-
 require "header.pl";
 
 my $user = 'default';
 my $pass = 'default';
 
+my $login = cookie('login');
+
 sub CashHoldings {
-  eval {@col=ExecSQL($dbuser, $dbpasswd, 
-		     "select cash_holdings from stockuser where email=?",
-		     "COL", $user)};
+  eval {@col=ExecSQL($dbuser, $dbpasswd,
+		     "select cash_holdings from stockuser where email='$login'",
+		     "COL" )};
   if ($@) {
     print "there was an error";
   } else {

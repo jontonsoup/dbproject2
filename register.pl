@@ -4,8 +4,9 @@ require "header.pl";
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
   my $user = param("user");
   my $pass = param("password");
+  my $cash = param("cash");
   my @rows;
-  eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password, cash_holdings) values (?, ?, ?)", undef, $user, $pass, 100000);};
+  eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password, cash_holdings) values (?, ?, ?)", undef, $user, $pass, $cash);};
   if ($@) {
     print "there was an error";
   } else {
@@ -18,7 +19,8 @@ else {
   print start_form(-name=>'Register', -type=>"post"),
   h2('Register!'), "<fieldset>",
   "Name: ",textfield(-name=>'user'),"<br><br>",
-  "Password: ",password_field(-name=>'password'), "<br><br>";
+  "Password: ",password_field(-name=>'password'), "<br><br>",
+  "Cash: ",textfield(-name=>'cash'),"<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
 
 

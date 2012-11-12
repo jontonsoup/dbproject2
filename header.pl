@@ -223,6 +223,13 @@ print "<div class=\"container\">";
 
 print "<div class=\"hero-unit\">";
 
+if(defined($login)){
+}
+else{
+	require "login_register.pl";
+	die;
+}
+
 
 #
 # The following is necessary so that DBD::Oracle can

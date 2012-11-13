@@ -35,7 +35,7 @@ CREATE TABLE transaction
 	type varchar(10) NOT NULL,
 	cashholding NUMBER NOT NULL,
 	user_id NUMBER NOT NULL,
-	PRIMARY KEY (symbol)
+	PRIMARY KEY (ts)
 );
 
 

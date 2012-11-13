@@ -6,7 +6,15 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   my $pass = param("password");
   my $cash = param("cash");
   my @rows;
-  eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values (?, ?)", undef, $user, $pass);};
+  		eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values (?, ?)", undef, $user, $pass);};
+		eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, email) values (?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
+		if ($@) {
+			print "there was an error";
+			} else {
+				print "<h2>Thanks for Registering!</h2>";
+				print "<a href=\"portfolio.pl\" class= \"btn\">Login!</a>";
+			}
+		}
   if ($@) {
     print "there was an error";
   } else {

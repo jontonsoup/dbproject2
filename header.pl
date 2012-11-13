@@ -37,17 +37,17 @@ sub ValidUser {
 	my @col;
 	eval {@col=ExecSQL($dbuser,$dbpasswd, "select count(*) from stockuser where email='$user' and password='$password'",undef);};
 
-		if ($@) {
-			return 0;
-			} else {
-				return $col[0]->[0];
-			}
+	if ($@) {
+		return 0;
+		} else {
+			return $col[0]->[0];
+		}
 	}
 
 
-sub MakeTable {
-	my ($id,$type,$headerlistref,@list)=@_;
-	my $out;
+	sub MakeTable {
+		my ($id,$type,$headerlistref,@list)=@_;
+		my $out;
 #
 # Check to see if there is anything to output
 #
@@ -167,6 +167,40 @@ $dbh->disconnect();
 return @ret;
 }
 
+sub sql_jon_version{
+	my ($query, $debug) =@_;
+	my $db = DBI->connect( "dbi:Oracle:$db", $dbuser, $dbpasswd ) || die( $DBI::errstr . "\n" );
+
+	$db->{AutoCommit}    = 0;
+
+	$db->{RaiseError}    = 1;
+
+	$db->{ora_check_sql} = 0;
+
+	$db->{RowCacheSize}  = 16;
+
+	my $SEL = $query;
+
+	my $sth = $db->prepare($SEL);
+
+	$sth->execute();
+	my @ret;
+
+	# while ( my @row = $sth->fetchrow_array() ) {
+	# 	foreach (@row) {
+	# 		$_ = "\t" if !defined($_);
+	# 			if($debug){print "$_\t";}
+	# 	}
+	# 	push @ret, @row;
+	# 	if($debug){print "\n";}
+	# }
+
+	$ret = $sth->fetchall_arrayref();
+	$sth->finish();
+	$db->disconnect() if defined($db);
+	return $ret;
+}
+
 
 
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
@@ -177,23 +211,23 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 
 		if ($valid == 1){
 
-				my $cookie=cookie(-name=>"login",
-					-value=>"$user", -expires =>"+10h");
-				push @outputcookies, $cookie;
+			my $cookie=cookie(-name=>"login",
+				-value=>"$user", -expires =>"+10h");
+			push @outputcookies, $cookie;
 
 			print header(-expires=>'now', -cookie=>\@outputcookies);
 
 		}
 		else {
-			 print "Content-type: text/html\n\n";
+			print "Content-type: text/html\n\n";
 		}
 	}
 	else {
-		 print "Content-type: text/html\n\n";
+		print "Content-type: text/html\n\n";
 	}
 }
 else {
-	 print "Content-type: text/html\n\n";
+	print "Content-type: text/html\n\n";
 }
 
 

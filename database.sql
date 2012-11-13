@@ -34,7 +34,7 @@ CREATE TABLE transaction
 	quantity NUMBER NOT NULL,
 	type varchar(10) NOT NULL,
 	cashholding NUMBER NOT NULL,
-	user_id NUMBER NOT NULL,
+	email varchar(100) NOT NULL,
 	PRIMARY KEY (ts)
 );
 

@@ -10,7 +10,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 		my $cash = param("cash");
 		my @rows;
 		eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values (?, ?)", undef, $user, $pass);};
-		eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, user_id) values (?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
+		eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, user_id) values (?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
 		if ($@) {
 			print "there was an error";
 			} else {
@@ -29,6 +29,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 		"Password: ",password_field(-name=>'password'), "<br><br>";
 		print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
 		print "<br><br>";
+		print "</form>";
 		print start_form(-name=>'Register', -type=>"post"),
 		h2('Register!'), "<fieldset>",
 		"Name: ",textfield(-name=>'user'),"<br><br>",

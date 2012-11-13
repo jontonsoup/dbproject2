@@ -169,7 +169,7 @@ return @ret;
 
 sub sql_jon_version{
 	my ($query, $debug) =@_;
-	my $db = DBI->connect( "dbi:Oracle:$db", $dbuser, $dbpasswd ) || die( $DBI::errstr . "\n" );
+	my $db = DBI->connect( "dbi:Oracle:", $dbuser, $dbpasswd ) || die( $DBI::errstr . "\n" );
 
 	$db->{AutoCommit}    = 0;
 
@@ -186,16 +186,10 @@ sub sql_jon_version{
 	$sth->execute();
 	my @ret;
 
-	# while ( my @row = $sth->fetchrow_array() ) {
-	# 	foreach (@row) {
-	# 		$_ = "\t" if !defined($_);
-	# 			if($debug){print "$_\t";}
-	# 	}
-	# 	push @ret, @row;
-	# 	if($debug){print "\n";}
-	# }
 
-	$ret = $sth->fetchall_arrayref();
+	if ($sth->{NUM_OF_FIELDS} > 0) {
+		$ret = $sth->fetchall_arrayref();
+	}
 	$sth->finish();
 	$db->disconnect() if defined($db);
 	return $ret;

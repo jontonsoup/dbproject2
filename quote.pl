@@ -10,6 +10,7 @@ $#ARGV>=0 or die "usage: quote.pl  SYMBOL+\n";
 
 
 @symbols=@ARGV;
+print Dumper(@symbols);
 
 $con=Finance::Quote->new();
 
@@ -19,7 +20,7 @@ $con->timeout(60);
 
 foreach $symbol (@ARGV) {
     print $symbol,"\n=========\n";
-    if (!defined($quotes{$symbol,"success"})) { 
+    if (!defined($quotes{$symbol,"success"})) {
 	print "No Data\n";
     } else {
 

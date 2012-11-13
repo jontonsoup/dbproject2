@@ -18,11 +18,12 @@ CREATE TABLE stocks
 CREATE TABLE stocksdaily
 (
 	symbol varchar(10) NOT NULL REFERENCES stocks(symbol),
-	open NUMBER NOT NULL,
-	high NUMBER NOT NULL,
-	low NUMBER NOT NULL,
-	close NUMBER NOT NULL,
-	volume NUMBER NOT NULL,
+	open NUMBER,
+	high NUMBER,
+	low NUMBER,
+	close NUMBER,
+	volume NUMBER,
+	ts TIMESTAMP,
 	PRIMARY KEY (symbol)
 );
 

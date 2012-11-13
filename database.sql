@@ -29,7 +29,7 @@ CREATE TABLE stocksdaily
 CREATE TABLE transaction
 (
 	ts TIMESTAMP DEFAULT systimestamp,
-	symbol varchar(10) NOT NULL REFERENCES stocks(symbol),
+	symbol varchar(10) NOT NULL, 
 	price NUMBER NOT NULL,
 	quantity NUMBER NOT NULL,
 	type varchar(10) NOT NULL,

@@ -10,7 +10,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 		my $cash = param("cash");
 		my @rows;
 		eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values (?, ?)", undef, $user, $pass);};
-		eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, user_id) values (?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
+		eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, email) values (?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
 		if ($@) {
 			print "there was an error";
 			} else {

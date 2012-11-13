@@ -2,7 +2,6 @@ CREATE TABLE stockuser
 (
 	email varchar(100) NOT NULL,
 	password varchar(50) NOT NULL,
-	cash_holdings INTEGER NOT NULL,
 	PRIMARY KEY (email)
 );
 
@@ -35,7 +34,6 @@ CREATE TABLE transaction
 	quantity NUMBER NOT NULL,
 	type varchar(10) NOT NULL,
 	cashholding NUMBER NOT NULL,
-	portfolio_id NUMBER NOT NULL,
 	user_id NUMBER NOT NULL,
 	PRIMARY KEY (symbol)
 );

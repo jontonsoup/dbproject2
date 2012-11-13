@@ -1,20 +1,10 @@
 #!/usr/bin/perl -w
 require "header.pl";
 
-sub ValidUser {
-	my ($user,$password)=@_;
-	my @col;
-	eval {@col=ExecSQL($dbuser,$dbpasswd, "select count(*) from stockuser where email='$user' and password='$password'",undef);};
 
-	if ($@) {
-		return 0;
-		} else {
-			return $col[0]>0;
-		}
-	}
 	if ($ENV{'REQUEST_METHOD'} eq "POST") {
 		print "<h2>Thanks for logging in!</h2>";
-		print "<a href=\"home.pl\" class= \"btn\">Go Home!</a>";
+		print "<a href=\"portfolio.pl\" class= \"btn\">Go Home!</a>";
 	}
 
 	else {

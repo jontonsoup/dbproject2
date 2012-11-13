@@ -37,11 +37,11 @@ sub ValidUser {
 	my @col;
 	eval {@col=ExecSQL($dbuser,$dbpasswd, "select count(*) from stockuser where email='$user' and password='$password'",undef);};
 
-	if ($@) {
-		return 0;
-		} else {
-			return $col[0]>0;
-		}
+		if ($@) {
+			return 0;
+			} else {
+				return $col[0]->[0];
+			}
 	}
 
 
@@ -173,7 +173,9 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	if(param("action") eq "login") {
 		my $user = param("user");
 		my $pass = param("password");
-		if (ValidUser($user,$pass)){
+		$valid = ValidUser($user,$pass);
+
+		if ($valid == 1){
 
 				my $cookie=cookie(-name=>"login",
 					-value=>"$user", -expires =>"+10h");
@@ -193,7 +195,6 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 else {
 	 print "Content-type: text/html\n\n";
 }
-
 
 
 

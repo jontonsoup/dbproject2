@@ -100,11 +100,17 @@ sub getstock{
 		return $ret;
 	}
 
+	$ret = sql_jon_version("select symbol from cs339.stockssymbols");
+	foreach $row (@$ret){
+		foreach $next (@$row){
+			getstock($next);
+		}
+	}
+
 	$ret = sql_jon_version("select symbol from stocks");
 	foreach $row (@$ret){
 		foreach $next (@$row){
 			getstock($next);
-			print "$next\n";
 		}
 	}
 

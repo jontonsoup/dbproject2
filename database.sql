@@ -29,7 +29,7 @@ CREATE TABLE stocksdaily
 CREATE TABLE transaction
 (
 	ts TIMESTAMP DEFAULT systimestamp,
-	symbol varchar(10) NOT NULL, 
+	symbol varchar(10) NOT NULL,
 	price NUMBER NOT NULL,
 	quantity NUMBER NOT NULL,
 	type varchar(10) NOT NULL,
@@ -50,6 +50,6 @@ CREATE TABLE hastransaction
 CREATE TABLE hasstock
 (
 	email varchar(100) NOT NULL REFERENCES stockuser(email),
-	amount NUMBER UNIQUE,
+	amount NUMBER,
 	symbol varchar(10) NOT NULL REFERENCES stocks(symbol)
 );

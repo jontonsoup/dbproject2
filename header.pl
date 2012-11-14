@@ -273,6 +273,10 @@ BEGIN {
 		$ENV{ORACLE_SID}="CS339";
 		$ENV{LD_LIBRARY_PATH}=$ENV{ORACLE_HOME}."/lib";
 		$ENV{BEGIN_BLOCK} = 1;
+		$ENV{PORTF_DBMS}="oracle";
+		$ENV{PORTF_DB}="cs339";
+		$ENV{PORTF_DBUSER}="jmf716";
+		$ENV{PORTF_DBPASS}="RR62rwno";
 		exec 'env',cwd().'/'.$0,@ARGV;
 	}
 }

@@ -1,0 +1,5391 @@
+$VAR1 = 'AACB';
+AACB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AAG';
+AAG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AAGP';
+AAGP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AAGM';
+AAGM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AAIIQ';
+AAIIQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352839560
+date	11/13/2012
+time	14:46
+close	0.02
+volume	0
+
+$VAR1 = 'AASP';
+AASP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1351264440
+date	10/26/2012
+time	10:14
+close	0.30
+volume	0
+
+$VAR1 = 'AARWE';
+AARWE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AATK';
+AATK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AAUK';
+AAUK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABBI';
+ABBI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABED';
+ABED
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABIO';
+ABIO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352917500
+date	11/14/2012
+time	12:25
+high	0.28
+low	0.2559
+close	0.265
+open	0.26
+volume	18700
+
+$VAR1 = 'ABI';
+ABI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352498400
+date	11/09/2012
+time	16:00
+close	15.95
+volume	0
+
+$VAR1 = 'ABIZ';
+ABIZ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABLA';
+ABLA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABPI';
+ABPI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352912280
+date	11/14/2012
+time	10:58
+high	0.105
+low	0.1001
+close	0.10
+open	0.105
+volume	86000
+
+$VAR1 = 'ABNSE';
+ABNSE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABMIQ';
+ABMIQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABN_PG';
+ABN_PG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	1:-240am
+
+$VAR1 = 'ABRX';
+ABRX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABRM';
+ABRM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABSPE';
+ABSPE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABTL';
+ABTL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352918220
+date	11/14/2012
+time	12:37
+high	4.01
+low	3.85
+close	4.11
+open	3.99
+volume	14200
+
+$VAR1 = 'ABA';
+ABA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ABWI';
+ABWI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACAR';
+ACAR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352917980
+date	11/14/2012
+time	12:33
+high	0.07
+low	0.07
+close	0.0625
+open	0.07
+volume	100000
+
+$VAR1 = 'ACC';
+ACC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	44.77
+low	44.072
+close	44.64
+open	44.77
+volume	192701
+
+$VAR1 = 'ACBAU';
+ACBAU
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	10:-78pm
+
+$VAR1 = 'ACEE';
+ACEE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACEI';
+ACEI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACE_PB';
+ACE_PB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACH';
+ACH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	10.61
+low	10.40
+close	10.40
+open	10.59
+volume	48411
+
+$VAR1 = 'ACLY';
+ACLY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1318514880
+date	10/13/2011
+time	09:08
+close	0.03
+volume	0
+
+$VAR1 = 'ACLM';
+ACLM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACLA';
+ACLA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352902080
+time	8:08am
+
+$VAR1 = 'ACMT';
+ACMT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1334586300
+date	04/16/2012
+time	09:25
+close	34.00
+volume	0
+
+$VAR1 = 'ACN';
+ACN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	66.514
+low	65.39
+close	66.28
+open	66.42
+volume	1194041
+
+$VAR1 = 'ACNC';
+ACNC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACORE';
+ACORE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ACRI';
+ACRI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352410440
+date	11/08/2012
+time	15:34
+close	0.015
+volume	0
+
+$VAR1 = 'ACSEF';
+ACSEF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352842500
+date	11/13/2012
+time	15:35
+close	1.17
+volume	0
+
+$VAR1 = 'ACTG';
+ACTG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	22.09
+low	20.95
+close	21.88
+open	21.88
+volume	346976
+
+$VAR1 = 'ACVE';
+ACVE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADCOE';
+ADCOE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADCSF';
+ADCSF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920860
+date	11/14/2012
+time	13:21
+
+$VAR1 = 'ADELQ';
+ADELQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADDM';
+ADDM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADEX';
+ADEX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADIN';
+ADIN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADLT';
+ADLT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADPI';
+ADPI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'ADMDE';
+ADMDE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADSOE';
+ADSOE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	1:-560am
+
+$VAR1 = 'ADSTW';
+ADSTW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADTY';
+ADTY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352830680
+date	11/13/2012
+time	12:18
+close	0.2228
+volume	0
+
+$VAR1 = 'AEAC';
+AEAC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ADY';
+ADY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919420
+date	11/14/2012
+time	12:57
+high	6.50
+low	6.42
+close	6.50
+open	6.44
+volume	19257
+
+$VAR1 = 'AEF_L';
+AEF_L
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AELA';
+AELA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AEMLW';
+AEMLW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AEOS';
+AEOS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AENG';
+AENG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352831340
+date	11/13/2012
+time	12:29
+close	0.005
+volume	0
+
+$VAR1 = 'AERS';
+AERS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352822400
+date	11/13/2012
+time	10:00
+close	0.009
+volume	0
+
+$VAR1 = 'AERN';
+AERN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352917740
+date	11/14/2012
+time	12:29
+high	0.0007
+low	0.0004
+close	0.0004
+open	0.0007
+volume	83500
+
+$VAR1 = 'AES_PC';
+AES_PC
+=========
+No Data
+
+$VAR1 = 'AESCW';
+AESCW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352925060
+time	2:31pm
+
+$VAR1 = 'AESK';
+AESK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AESRO';
+AESRO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AESWE';
+AESWE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AESPE';
+AESPE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AET';
+AET
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	41.66
+low	40.77
+close	41.48
+open	41.51
+volume	2006359
+
+$VAR1 = 'AFC';
+AFC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919480
+date	11/14/2012
+time	12:58
+high	25.0538
+low	24.97
+close	25.08
+open	25.03
+volume	10620
+
+$VAR1 = 'AFCE';
+AFCE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	26.505
+low	25.61
+close	26.38
+open	26.505
+volume	52867
+
+$VAR1 = 'AFM';
+AFM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352913960
+date	11/14/2012
+time	11:26
+high	25.2241
+low	24.93
+close	25.18
+open	25.20
+volume	20290
+
+$VAR1 = 'AFOHK';
+AFOHK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AFTI';
+AFTI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGC_PB';
+AGC_PB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGCCQ';
+AGCCQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGC';
+AGC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	6.38
+low	6.25
+close	6.40
+open	6.37
+volume	74699
+
+$VAR1 = 'AGD';
+AGD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	5.36
+low	5.22
+close	5.33
+open	5.33
+volume	141613
+
+$VAR1 = 'AGDC';
+AGDC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGII';
+AGII
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	33.36
+low	32.90
+close	33.01
+open	33.13
+volume	47586
+
+$VAR1 = 'AGLFL';
+AGLFL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGLS';
+AGLS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352844000
+date	11/13/2012
+time	16:00
+close	21.4801
+volume	0
+
+$VAR1 = 'AGN';
+AGN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	90.15
+low	89.07
+close	89.77
+open	90.04
+volume	418942
+
+$VAR1 = 'AGR_A';
+AGR_A
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGPC';
+AGPC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGRN';
+AGRN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AGTT';
+AGTT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352909940
+date	11/14/2012
+time	10:19
+high	0.10
+low	0.10
+close	0.12
+open	0.10
+volume	15000
+
+$VAR1 = 'AGUEE';
+AGUEE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AH';
+AH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	11.1885
+low	10.99
+close	11.01
+open	11.01
+volume	219417
+
+$VAR1 = 'AHFI';
+AHFI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352427000
+date	11/08/2012
+time	20:10
+close	0.0001
+volume	0
+
+$VAR1 = 'AHMX';
+AHMX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AHM_PA';
+AHM_PA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AHL_P';
+AHL_P
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AHIZQ';
+AHIZQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352882580
+time	2:43am
+
+$VAR1 = 'AHM_PB';
+AHM_PB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AHRX';
+AHRX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AIGI';
+AIGI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352929260
+time	3:41pm
+
+$VAR1 = 'AIMH';
+AIMH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352914260
+date	11/14/2012
+time	11:31
+high	0.007
+low	0.0051
+close	0.0109
+open	0.007
+volume	15000
+
+$VAR1 = 'AIMI';
+AIMI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AIRT';
+AIRT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352918760
+date	11/14/2012
+time	12:46
+high	8.40
+low	8.32
+close	8.33
+open	8.40
+volume	1566
+
+$VAR1 = 'AIRSQ';
+AIRSQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AIV_PD';
+AIV_PD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AIXD';
+AIXD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AJX';
+AJX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AKO_A';
+AKO_A
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AKCA';
+AKCA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352922960
+time	1:56pm
+
+$VAR1 = 'AKS';
+AKS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	4.53
+low	4.15
+close	4.50
+open	4.48
+volume	11023061
+
+$VAR1 = 'AKPBE';
+AKPBE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AKS_P';
+AKS_P
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ALAB';
+ALAB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ALAN';
+ALAN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352911500
+date	11/14/2012
+time	10:45
+high	0.7101
+low	0.7101
+close	0.72
+open	0.7101
+volume	525
+
+$VAR1 = 'ALAG';
+ALAG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ALBT';
+ALBT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ALEX';
+ALEX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	28.54
+low	27.80
+close	28.78
+open	28.46
+volume	80745
+
+$VAR1 = 'ALFA';
+ALFA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352909160
+date	11/14/2012
+time	10:06
+close	26.9001
+volume	800
+
+$VAR1 = 'ALHI';
+ALHI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ALV';
+ALV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	56.5286
+low	55.50
+close	56.01
+open	56.50
+volume	525345
+
+$VAR1 = 'ALSK';
+ALSK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	1.95
+low	1.93
+close	1.92
+open	1.93
+volume	144513
+
+$VAR1 = 'ALZYF';
+ALZYF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352925000
+time	2:30pm
+
+$VAR1 = 'AMAR';
+AMAR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352907360
+date	11/14/2012
+time	09:36
+high	0.015
+low	0.014
+close	0.014
+open	0.015
+volume	8000
+
+$VAR1 = 'AMB_PA';
+AMB_PA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMB_PL';
+AMB_PL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	9:-240am
+
+$VAR1 = 'AMEPW';
+AMEPW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMER';
+AMER
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMCN';
+AMCN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352913060
+date	11/14/2012
+time	11:11
+high	1.94
+low	1.87
+close	1.85
+open	1.91
+volume	11300
+
+$VAR1 = 'AMDM';
+AMDM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMG';
+AMG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	125.42
+low	122.82
+close	124.93
+open	125.21
+volume	119954
+
+$VAR1 = 'AMIE';
+AMIE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1302638400
+date	04/12/2011
+time	15:00
+high	0.31
+low	0.31
+close	0.31
+volume	0
+
+$VAR1 = 'AMIV';
+AMIV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMFC';
+AMFC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1350414300
+date	10/16/2012
+time	14:05
+close	6.00
+volume	0
+
+$VAR1 = 'AMGI';
+AMGI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1350049140
+date	10/12/2012
+time	08:39
+close	0.0011
+volume	0
+
+$VAR1 = 'AMLC';
+AMLC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1347988320
+date	09/18/2012
+time	12:12
+close	0.002
+volume	0
+
+$VAR1 = 'AMMN';
+AMMN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMR';
+AMR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352944680
+time	7:58pm
+
+$VAR1 = 'AMPD';
+AMPD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352912640
+date	11/14/2012
+time	11:04
+high	0.15
+low	0.15
+close	0.13
+open	0.15
+volume	9000
+
+$VAR1 = 'AMPN';
+AMPN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMPLO';
+AMPLO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMRRE';
+AMRRE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMRL';
+AMRL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1311098820
+date	07/19/2011
+time	13:07
+close	48.00
+volume	0
+
+$VAR1 = 'AMTC';
+AMTC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352835960
+date	11/13/2012
+time	13:46
+close	0.55
+volume	0
+
+$VAR1 = 'AMST';
+AMST
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1326134760
+date	01/09/2012
+time	12:46
+close	0.0031
+volume	0
+
+$VAR1 = 'AMTL';
+AMTL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1327679700
+date	01/27/2012
+time	09:55
+close	0.0001
+volume	0
+
+$VAR1 = 'AMTV';
+AMTV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMSH';
+AMSH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1342034520
+date	07/11/2012
+time	14:22
+close	0.0006
+volume	0
+
+$VAR1 = 'AMSGB';
+AMSGB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMW';
+AMW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ANA';
+ANA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMVPQ';
+AMVPQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMVS';
+AMVS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AMXT';
+AMXT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ANEN';
+ANEN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	19.03
+low	18.36
+close	18.45
+open	18.54
+volume	16210
+
+$VAR1 = 'ANDR';
+ANDR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352911740
+date	11/14/2012
+time	10:49
+high	0.035
+low	0.035
+close	0.0495
+open	0.035
+volume	1100
+
+$VAR1 = 'ANLT';
+ANLT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ANIW';
+ANIW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352873580
+time	12:13am
+
+$VAR1 = 'ANSI';
+ANSI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ANSL';
+ANSL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ANTC';
+ANTC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APADE';
+APADE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AO_PA';
+AO_PA
+=========
+No Data
+
+$VAR1 = 'AORMF';
+AORMF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	9:-240am
+
+$VAR1 = 'AOG_PA';
+AOG_PA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AOLS';
+AOLS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352833140
+date	11/13/2012
+time	12:59
+close	0.265
+volume	0
+
+$VAR1 = 'AOSI';
+AOSI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352952780
+time	10:13pm
+
+$VAR1 = 'APCC';
+APCC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'APAHO';
+APAHO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	8:-528am
+
+$VAR1 = 'APBL';
+APBL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1344967380
+date	08/14/2012
+time	13:03
+close	0.50
+volume	0
+
+$VAR1 = 'AP';
+AP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	17.2705
+low	17.03
+close	17.21
+open	17.27
+volume	8265
+
+$VAR1 = 'APIEF';
+APIEF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APGR';
+APGR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352302560
+date	11/07/2012
+time	09:36
+close	1.01
+volume	0
+
+$VAR1 = 'APHR';
+APHR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APLX';
+APLX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APRE';
+APRE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352916000
+date	11/14/2012
+time	12:00
+high	0.0063
+low	0.0063
+close	0.0075
+open	0.0063
+volume	79925
+
+$VAR1 = 'APNT';
+APNT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352916120
+date	11/14/2012
+time	12:02
+high	0.15
+low	0.103
+close	0.13
+open	0.13
+volume	55000
+
+$VAR1 = 'APLS';
+APLS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APRCN';
+APRCN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APVE';
+APVE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1329933120
+date	02/22/2012
+time	11:52
+close	0.004
+volume	0
+
+$VAR1 = 'APTX';
+APTX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APSA';
+APSA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352918220
+date	11/14/2012
+time	12:37
+high	16.64
+low	16.0026
+close	16.02
+open	16.14
+volume	3008
+
+$VAR1 = 'APS';
+APS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'APXR';
+APXR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1319654760
+date	10/26/2011
+time	13:46
+close	0.028
+volume	0
+
+$VAR1 = 'APXTA';
+APXTA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQDYE';
+AQDYE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQGC';
+AQGC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1342030380
+date	07/11/2012
+time	13:13
+close	0.0001
+volume	0
+
+$VAR1 = 'AQM';
+AQM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQAS';
+AQAS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352929260
+time	3:41pm
+
+$VAR1 = 'AQCB';
+AQCB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQCY';
+AQCY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQQQ';
+AQQQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQNT';
+AQNT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AQSE';
+AQSE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARES';
+ARES
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARC_PC';
+ARC_PC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARE_PA';
+ARE_PA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARD_W';
+ARD_W
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARDTE';
+ARDTE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARHN';
+ARHN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352838360
+date	11/13/2012
+time	14:26
+close	9.25
+volume	0
+
+$VAR1 = 'ARGLU';
+ARGLU
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARGLW';
+ARGLW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARFRE';
+ARFRE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARCHQ';
+ARCHQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AROW';
+AROW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	23.73
+low	23.55
+close	23.72
+open	23.67
+volume	3335
+
+$VAR1 = 'ARIS';
+ARIS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919840
+date	11/14/2012
+time	13:04
+high	1.30
+low	1.25
+close	1.25
+open	1.25
+volume	10256
+
+$VAR1 = 'AROR';
+AROR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARII';
+ARII
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	31.15
+low	29.36
+close	31.16
+open	31.14
+volume	241113
+
+$VAR1 = 'AROG';
+AROG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARQL';
+ARQL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	2.48
+low	2.41
+close	2.41
+open	2.42
+volume	79766
+
+$VAR1 = 'ARTC';
+ARTC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	31.64
+low	31.32
+close	31.76
+open	31.35
+volume	127829
+
+$VAR1 = 'ARS';
+ARS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'ARPT';
+ARPT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARPB';
+ARPB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARTT';
+ARTT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ARRW';
+ARRW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASAQU';
+ASAQU
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AS';
+AS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASDV';
+ASDV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASFG';
+ASFG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASCL';
+ASCL
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASCO';
+ASCO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASCP';
+ASCP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASCTE';
+ASCTE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASCX';
+ASCX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASCD';
+ASCD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASGR';
+ASGR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'ASIT';
+ASIT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASKJ';
+ASKJ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASPC';
+ASPC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	1:-240am
+
+$VAR1 = 'ASPM';
+ASPM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASN_PA';
+ASN_PA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASLR';
+ASLR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASPZ';
+ASPZ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352404440
+date	11/08/2012
+time	13:54
+close	0.025
+volume	0
+
+$VAR1 = 'ASN_B';
+ASN_B
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	9:-240am
+
+$VAR1 = 'ASWT';
+ASWT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASWX';
+ASWX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASYC';
+ASYC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ASYI';
+ASYI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352842920
+date	11/13/2012
+time	15:42
+close	0.0001
+volume	0
+
+$VAR1 = 'ASRF';
+ASRF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATAHQ';
+ATAHQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATGN';
+ATGN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352917140
+date	11/14/2012
+time	12:19
+high	0.27
+low	0.27
+close	0.3099
+open	0.27
+volume	100
+
+$VAR1 = 'ATGCQ';
+ATGCQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATA';
+ATA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352152800
+date	11/05/2012
+time	16:00
+close	9.46
+volume	0
+
+$VAR1 = 'ATELE';
+ATELE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352911440
+time	10:44am
+
+$VAR1 = 'ATBC';
+ATBC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1289854920
+date	11/15/2010
+time	15:02
+high	2.11
+low	2.11
+close	2.11
+volume	0
+
+$VAR1 = 'ATEGE';
+ATEGE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATCME';
+ATCME
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATHR';
+ATHR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'ATHY';
+ATHY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATIS';
+ATIS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATIX';
+ATIX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352949060
+time	9:11pm
+
+$VAR1 = 'ATLI';
+ATLI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352925060
+time	2:31pm
+
+$VAR1 = 'ATLIE';
+ATLIE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATMA';
+ATMA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1333562040
+date	04/04/2012
+time	12:54
+close	0.0006
+volume	0
+
+$VAR1 = 'ATLS';
+ATLS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919300
+date	11/14/2012
+time	12:55
+high	33.05
+low	32.00
+close	32.95
+open	32.89
+volume	140989
+
+$VAR1 = 'ATKC';
+ATKC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+date	03/764/75141
+time	00:00
+
+$VAR1 = 'ATR';
+ATR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919900
+date	11/14/2012
+time	13:05
+high	47.3765
+low	46.57
+close	47.15
+open	47.12
+volume	117075
+
+$VAR1 = 'ATN';
+ATN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'ATTU';
+ATTU
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352918640
+date	11/14/2012
+time	12:44
+high	7.28
+low	7.15
+close	7.19
+open	7.24
+volume	5536
+
+$VAR1 = 'ATX';
+ATX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	9.68
+low	9.54
+close	9.63
+open	9.65
+volume	3173
+
+$VAR1 = 'AUD';
+AUD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919480
+date	11/14/2012
+time	12:58
+high	105.40
+low	104.60
+close	105.45
+open	105.40
+volume	1088
+
+$VAR1 = 'ATXC';
+ATXC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AUFI';
+AUFI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AUY_W';
+AUY_W
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AUUI';
+AUUI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVBCE';
+AVBCE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AURAE';
+AURAE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352925060
+time	2:31pm
+
+$VAR1 = 'AURC';
+AURC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1318440300
+date	10/12/2011
+time	12:25
+close	0.0008
+volume	0
+
+$VAR1 = 'AUXO';
+AUXO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352914620
+date	11/14/2012
+time	11:37
+high	0.9799
+low	0.9799
+close	0.9799
+open	0.9799
+volume	100
+
+$VAR1 = 'AUXOE';
+AUXOE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352922960
+time	1:56pm
+
+$VAR1 = 'AURO';
+AURO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVCA';
+AVCA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919240
+date	11/14/2012
+time	12:54
+high	5.23
+low	5.05
+close	5.25
+open	5.20
+volume	3468
+
+$VAR1 = 'AVI';
+AVI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVCP';
+AVCP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1332634200
+date	03/24/2012
+time	19:10
+close	0.0015
+volume	0
+
+$VAR1 = 'AVIIW';
+AVIIW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1344023820
+date	08/03/2012
+time	14:57
+close	1.85
+volume	0
+
+$VAR1 = 'AVOC';
+AVOC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVNUE';
+AVNUE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVLS';
+AVLS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352498160
+date	11/09/2012
+time	15:56
+close	0.0006
+volume	0
+
+$VAR1 = 'AVPAW';
+AVPAW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVPD';
+AVPD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352926920
+time	3:02pm
+
+$VAR1 = 'AVTC';
+AVTC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919480
+date	11/14/2012
+time	12:58
+high	1.34
+low	1.26
+close	1.29
+open	1.26
+volume	616
+
+$VAR1 = 'AVSG';
+AVSG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352901540
+time	7:59am
+
+$VAR1 = 'AVTRG';
+AVTRG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVSSP';
+AVSSP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVVE';
+AVVE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVVW';
+AVVW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AVTH';
+AVTH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AWC';
+AWC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	3.47
+low	3.40
+close	3.48
+open	3.46
+volume	87142
+
+$VAR1 = 'AWD';
+AWD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AWLD';
+AWLD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352922420
+time	1:47pm
+
+$VAR1 = 'AXCA';
+AXCA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AXC';
+AXC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AWRCF';
+AWRCF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	6:-58am
+
+$VAR1 = 'AX';
+AX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'AXREF';
+AXREF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352828280
+date	11/13/2012
+time	11:38
+close	0.1262
+volume	25000
+
+$VAR1 = 'AXPT';
+AXPT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352237580
+date	11/06/2012
+time	15:33
+close	0.125
+volume	0
+
+$VAR1 = 'AXMP';
+AXMP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352834340
+date	11/13/2012
+time	13:19
+close	0.0072
+volume	0
+
+$VAR1 = 'AXNP';
+AXNP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AZIC';
+AZIC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AYI';
+AYI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920140
+date	11/14/2012
+time	13:09
+high	63.45
+low	62.51
+close	63.00
+open	63.12
+volume	74317
+
+$VAR1 = 'AYSI';
+AYSI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352757000
+date	11/12/2012
+time	15:50
+close	0.60
+volume	0
+
+$VAR1 = 'AZHG';
+AZHG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AZCE';
+AZCE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	4:-35am
+
+$VAR1 = 'AZZ';
+AZZ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	38.49
+low	36.48
+close	38.25
+open	38.26
+volume	69042
+
+$VAR1 = 'BABY';
+BABY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920140
+date	11/14/2012
+time	13:09
+high	11.26
+low	10.80
+close	11.20
+open	11.26
+volume	29600
+
+$VAR1 = 'B';
+B
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352919960
+date	11/14/2012
+time	13:06
+high	20.72
+low	20.24
+close	20.66
+open	20.65
+volume	120378
+
+$VAR1 = 'AZZST';
+AZZST
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'AZUR';
+AZUR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BANCP';
+BANCP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BARK';
+BARK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BAQG';
+BAQG
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BANCH';
+BANCH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BALTF';
+BALTF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BANGP';
+BANGP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BAX';
+BAX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920140
+date	11/14/2012
+time	13:09
+high	66.88
+low	65.37
+close	65.95
+open	66.28
+volume	1991018
+
+$VAR1 = 'BBNV';
+BBNV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BBGI';
+BBGI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352916180
+date	11/14/2012
+time	12:03
+high	4.05
+low	4.01
+close	4.01
+open	4.03
+volume	2766
+
+$VAR1 = 'BBBCZ';
+BBBCZ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BBMF';
+BBMF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1334247600
+date	04/12/2012
+time	11:20
+close	0.10
+volume	0
+
+$VAR1 = 'BBXT';
+BBXT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1347393120
+date	09/11/2012
+time	14:52
+high	33.90
+low	33.49
+close	33.90
+open	33.49
+volume	8004
+
+$VAR1 = 'BBX';
+BBX
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352918100
+date	11/14/2012
+time	12:35
+high	6.55
+low	6.51
+close	6.56
+open	6.55
+volume	2900
+
+$VAR1 = 'BBSW';
+BBSW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BBY_I';
+BBY_I
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BCR';
+BCR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920140
+date	11/14/2012
+time	13:09
+high	95.37
+low	94.3836
+close	94.70
+open	94.76
+volume	274050
+
+$VAR1 = 'BCSB';
+BCSB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352826360
+date	11/13/2012
+time	11:06
+close	15.1499
+volume	0
+
+$VAR1 = 'BCRAE';
+BCRAE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BCIT';
+BCIT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	-23:33am
+
+$VAR1 = 'BCSO';
+BCSO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1302011940
+date	04/05/2011
+time	08:59
+close	62.00
+volume	0
+
+$VAR1 = 'BCV';
+BCV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	16.21
+low	16.02
+close	16.25
+open	16.19
+volume	29266
+
+$VAR1 = 'BDEI';
+BDEI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	-19:06am
+
+$VAR1 = 'BDCF';
+BDCF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BDLN';
+BDLN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BDMS';
+BDMS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352907000
+date	11/14/2012
+time	09:30
+high	16.91
+low	16.91
+close	16.88
+open	16.91
+volume	139
+
+$VAR1 = 'BDN_PC';
+BDN_PC
+=========
+No Data
+
+$VAR1 = 'BEAR';
+BEAR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BEC';
+BEC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'BDSB';
+BDSB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BDSIW';
+BDSIW
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BDSS';
+BDSS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BELM';
+BELM
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BED';
+BED
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BEERF';
+BEERF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BELS';
+BELS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BENGB';
+BENGB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BEGI';
+BEGI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1351172220
+date	10/25/2012
+time	08:37
+close	0.55
+volume	0
+
+$VAR1 = 'BENK';
+BENK
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 35678384040
+date	08/09/3100
+time	01:14
+
+$VAR1 = 'BEOVF';
+BEOVF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	1:-240am
+
+$VAR1 = 'BESC';
+BESC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BETS';
+BETS
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BFCFA';
+BFCFA
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BFCFB';
+BFCFB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1350583560
+date	10/18/2012
+time	13:06
+close	1.00
+volume	0
+
+$VAR1 = 'BGA_P';
+BGA_P
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BGEN';
+BGEN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BGCT';
+BGCT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BGD';
+BGD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BGATE';
+BGATE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	10:-586pm
+
+$VAR1 = 'BHB';
+BHB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352914500
+date	11/14/2012
+time	11:35
+high	34.10
+low	33.93
+close	33.82
+open	34.00
+volume	2400
+
+$VAR1 = 'BHD';
+BHD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	15.00
+low	14.66
+close	15.00
+open	15.00
+volume	28639
+
+$VAR1 = 'BIAC';
+BIAC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	1:-240am
+
+$VAR1 = 'BIDN';
+BIDN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	9:-240am
+
+$VAR1 = 'BID';
+BID
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920140
+date	11/14/2012
+time	13:09
+high	29.308
+low	28.79
+close	28.91
+open	29.18
+volume	331131
+
+$VAR1 = 'BHWB';
+BHWB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352918700
+date	11/14/2012
+time	12:45
+high	6.40
+low	6.35
+close	6.50
+open	6.40
+volume	600
+
+$VAR1 = 'BHWV';
+BHWV
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIO_A';
+BIO_A
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIORY';
+BIORY
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIKE';
+BIKE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIOP';
+BIOP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIGTQ';
+BIGTQ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352930760
+time	4:06pm
+
+$VAR1 = 'BIOHF';
+BIOHF
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1331856600
+date	03/15/2012
+time	19:10
+close	0.0008
+volume	0
+
+$VAR1 = 'BIGR';
+BIGR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIIB';
+BIIB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920140
+date	11/14/2012
+time	13:09
+high	138.44
+low	136.65
+close	138.02
+open	138.00
+volume	377018
+
+$VAR1 = 'BIKO';
+BIKO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIKR';
+BIKR
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIOC';
+BIOC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352913480
+date	11/14/2012
+time	11:18
+high	5.90
+low	5.80
+close	5.73
+open	5.80
+volume	950
+
+$VAR1 = 'BIMSE';
+BIMSE
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BIPN';
+BIPN
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BJCT';
+BJCT
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352830980
+date	11/13/2012
+time	12:23
+close	0.038
+volume	0
+
+$VAR1 = 'BJ';
+BJ
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+volume	0
+
+$VAR1 = 'BKBO';
+BKBO
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BKD';
+BKD
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920080
+date	11/14/2012
+time	13:08
+high	22.70
+low	21.66
+close	22.59
+open	22.65
+volume	630765
+
+$VAR1 = 'BK_PC';
+BK_PC
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BKH';
+BKH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	34.50
+low	33.71
+close	34.23
+open	34.19
+volume	118890
+
+$VAR1 = 'BKMU';
+BKMU
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1352920020
+date	11/14/2012
+time	13:07
+high	4.25
+low	4.13
+close	4.19
+open	4.21
+volume	33541
+
+$VAR1 = 'BKHB';
+BKHB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BKNGP';
+BKNGP
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BKTI';
+BKTI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+time	9:-240am
+
+$VAR1 = 'BLCBB';
+BLCBB
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 1349984220
+date	10/11/2012
+time	14:37
+close	7.50
+volume	0
+
+$VAR1 = 'BLCI';
+BLCI
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7 = 'volume';
+unix: 
+
+$VAR1 = 'BLH';
+BLH
+=========
+$VAR1 = 'date';
+$VAR2 = 'time';
+$VAR3 = 'high';
+$VAR4 = 'low';
+$VAR5 = 'close';
+$VAR6 = 'open';
+$VAR7

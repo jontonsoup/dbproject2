@@ -56,8 +56,8 @@ sub getstock{
 				$close = $quotes{$symbol,"close"};
 				$open = $quotes{$symbol,"open"};
 				$volume = $quotes{$symbol,"volume"};
-				my $time1 = parsedate($time . $time);
-
+				my $time1 = parsedate("$date $time");
+				print "unix: ",$time1, "\n";
 
 				foreach $key (@info) {
 					if (defined($quotes{$symbol,$key})) {

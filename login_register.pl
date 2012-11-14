@@ -2,7 +2,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	if (param('action') eq "login")
 	{
 		print "<h2>Thanks for logging in!</h2>";
-		print "<a href=\"portfolio.pl\" class= \"btn\">Go Home!</a>";
+    print "<a href=\"manage_portfolios.pl\" class=\"btn\">Manage Portfolios</a>";
 	}
 	else {
     my $user = param("user");

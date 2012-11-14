@@ -12,8 +12,8 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 		print "there was an error";
 		} else {
 			print "<h2>Thanks for Registering!</h2>";
-			print "<a href=\"portfolio.pl\" class= \"btn\">Login!</a>";
-		}
+      print "<a href=\"manage_portfolios.pl\" class=\"btn\">Manage Portfolios</a>";
+    }
 
 	}
 	else {

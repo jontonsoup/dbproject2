@@ -4,10 +4,10 @@ require "header.pl";
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	my $user = param("user");
 	my $pass = param("password");
-	my $cash = param("cash");
 	my @rows;
 	eval { ExecSQL($dbuser,$dbpasswd,"insert into stockuser (email, password) values (?, ?)", undef, $user, $pass);};
-	eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, email) values (?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
+  # we also need portfolio_id, but let's allow them to make portfolios after they're logged in
+  #eval { ExecSQL($dbuser,$dbpasswd,"insert into transaction (symbol, price, quantity, type, cashholding, email) values (?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $user);};
 	if ($@) {
 		print "there was an error";
 		} else {
@@ -18,13 +18,18 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	}
 	else {
 
+    #print start_form(-name=>'Register', -type=>"post"),
+    #h2('Register!'), "<fieldset>",
+    #"Name: ",textfield(-name=>'user'),"<br><br>",
+    #"Password: ",password_field(-name=>'password'), "<br><br>",
+    #"Cash: ",textfield(-name=>'cash'),"<br><br>";
+    #print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+
 		print start_form(-name=>'Register', -type=>"post"),
 		h2('Register!'), "<fieldset>",
 		"Name: ",textfield(-name=>'user'),"<br><br>",
-		"Password: ",password_field(-name=>'password'), "<br><br>",
-		"Cash: ",textfield(-name=>'cash'),"<br><br>";
+		"Password: ",password_field(-name=>'password'), "<br><br>";
 		print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
-
 
 	}
 	require "footer.pl";

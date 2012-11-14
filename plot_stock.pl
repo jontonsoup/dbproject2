@@ -1,7 +1,6 @@
 #!/usr/bin/perl -w
 
 
-use strict;
 use CGI qw(:standard);
 use DBI;
 use Time::ParseDate;
@@ -24,6 +23,33 @@ BEGIN {
 };
 
 use stock_data_access;
+sub sql_jon_version{
+  my ($query, $debug) =@_;
+  my $db = DBI->connect( "dbi:Oracle:", "jmf716", "RR62rwno" ) || die( $DBI::errstr . "\n" );
+
+  $db->{AutoCommit}    = 0;
+
+  $db->{RaiseError}    = 1;
+
+  $db->{ora_check_sql} = 0;
+
+  $db->{RowCacheSize}  = 16;
+
+  my $SEL = $query;
+
+  my $sth = $db->prepare($SEL);
+
+  $sth->execute();
+  my @ret;
+
+
+  if ($sth->{NUM_OF_FIELDS} > 0) {
+    $ret = $sth->fetchall_arrayref();
+  }
+  $sth->finish();
+  $db->disconnect() if defined($db);
+  return $ret;
+}
 
 my $type = param('type');
 my $symbol = param('symbol');
@@ -45,16 +71,23 @@ if (!defined($type) || $type eq "text" || !($type eq "plot") ) {
   if (!defined($symbol)) {
     print "<p>You should give symbol=symbolname  </p>";
   }
-} elsif ($type eq "plot") {
-  print header(-type => 'image/png', -expires => '-1h' );
-  if (!defined($symbol)) {
+  } elsif ($type eq "plot") {
+    print header(-type => 'image/png', -expires => '-1h' );
+    if (!defined($symbol)) {
     # $symbol = 'AAPL'; # default
   }
 }
 
 
 my @rows = ExecStockSQL("2D","select timestamp, close from ".GetStockPrefix()."StocksDaily where symbol=rpad(?,16)",$symbol);
+my $ret = sql_jon_version("select ts, close from stocksdaily where symbol='$symbol'");
 
+print $ret->[0]->[0] . "<br>";
+foreach $row (@$ret){
+  foreach $next (@$row){
+   print "$next<br>";
+ }
+}
 if ($type eq "text") {
   print "<pre>";
   foreach my $r (@rows) {
@@ -66,14 +99,14 @@ if ($type eq "text") {
   print "</body>";
   print "</html>";
 
-} elsif ($type eq "plot") {
+  } elsif ($type eq "plot") {
 #
 # This is how to drive gnuplot to produce a plot
 # The basic idea is that we are going to send it commands and data
 # at stdin, and it will print the graph for us to stdout
 #
 #
-  open(GNUPLOT,"| gnuplot") or die "Cannot run gnuplot";
+open(GNUPLOT,"| gnuplot") or die "Cannot run gnuplot";
 
   print GNUPLOT "set term png\n";           # we want it to produce a PNG
   print GNUPLOT "set output\n";             # output the PNG to stdout
@@ -89,6 +122,7 @@ if ($type eq "text") {
 
   close(GNUPLOT);
 }
+
 
 
 

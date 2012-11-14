@@ -1,3 +1,4 @@
+export PATH=$PATH:/home/gsi669/www/portfolio
 export PORTF_DBMS='oracle'
 export PORTF_DB='cs339'
 export PORTF_DBUSER='gsi669'

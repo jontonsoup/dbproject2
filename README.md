@@ -1,5 +1,9 @@
 # Notes
 
+## To Do
+
+- page: history of transactions
+
 ## DB changes
 
 - removed cash_holdings from stockuser

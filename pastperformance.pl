@@ -1,9 +1,9 @@
 #!/usr/bin/perl -w
-# use Getopt::Long;
- require "header.pl";
-$symbol = "APPL";#param("stock");
+require "header.pl";
 
- print `time_series_symbol_project.pl ORCL 8 AWAIT 300 ARIMA 2 1 2 | tail -20 2>&1`;
- print `env`;
+$stock = param("stock");
+
+print "<img class=\"img\" src=\"http:\/\/murphy.wot.eecs.northwestern.edu\/~jmf716\/portfolio\/plot_stock.pl?type=plot&symbol=$stock\">";
+
 
 require "footer.pl";

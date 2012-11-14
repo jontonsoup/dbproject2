@@ -2,7 +2,8 @@
 
 ## To Do
 
-- page: history of transactions
+- page: history of transactions DONE
+- update DB to allow one or more portfolios
 
 ## DB changes
 

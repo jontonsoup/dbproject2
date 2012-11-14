@@ -267,6 +267,7 @@ else{
 BEGIN {
 	unless ($ENV{BEGIN_BLOCK}) {
 		use Cwd;
+		$ENV{PATH} = "$ENV{PATH}:/usr/lib64/qt-3.3/bin:/usr/NX/bin:/usr/local/bin:/bin:/usr/bin:/home/jmf716/bin:/home/jmf716/eecs340/proj1/minet-netclass-w12:/home/jmf716/eecs340/proj1/minet-netclass-w12/bin:/home/jmf716/www/portfolio/:/raid/oracle11g/app/oracle/product/11.2.0.1.0/db_1/bin";
 		$ENV{ORACLE_BASE}="/raid/oracle11g/app/oracle/product/11.2.0.1.0";
 		$ENV{ORACLE_HOME}=$ENV{ORACLE_BASE}."/db_1";
 		$ENV{ORACLE_SID}="CS339";

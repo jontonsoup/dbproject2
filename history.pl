@@ -15,7 +15,7 @@ print "
 
 # collects and tabulates history of transactions for current user
 sub HistoryTable {
-  @ret = sql_jon_version("select ts, symbol, price, quantity, type, cashholding from transaction where email='$login' AND rownum<=10 order by ts DESC");
+  @ret = sql_jon_version("select ts, symbol, price, quantity, type, cashholding from transaction where email='$login' order by ts DESC");
   #print Dumper(@ret);
   print "<table class=\"table table-striped\">";
   print "<thead>";

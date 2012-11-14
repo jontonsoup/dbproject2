@@ -82,10 +82,11 @@ if (!defined($type) || $type eq "text" || !($type eq "plot") ) {
 my @rows = ExecStockSQL("2D","select timestamp, close from ".GetStockPrefix()."StocksDaily where symbol=rpad(?,16)",$symbol);
 my $ret = sql_jon_version("select ts, close from stocksdaily where symbol='$symbol'");
 
-print $ret->[0]->[0] . "<br>";
+
 foreach $row (@$ret){
+  push @rows, $row;
   foreach $next (@$row){
-   print "$next<br>";
+   # print "$next<br>";
  }
 }
 if ($type eq "text") {

@@ -23,7 +23,7 @@ sub CashHoldings {
    #       "COL" )};
 
 
-$ret = sql_jon_version("select stocks.symbol, amount from stocks, hasstock where email='$login'");
+$ret = sql_jon_version("select stocks.symbol, amount from stocks join hasstock on stocks.symbol = hasstock.symbol where hasstock.email ='$login'");
 print Dumper(@ret);
 print "<table class=\"table table-striped\">";
 print "<thead>";
@@ -32,12 +32,12 @@ print "<tbody>";
 foreach $row (@$ret){
   print "<tr>";
   foreach $next (@$row){
-     print "<td>$next</td>";
-  }
-  print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
-  print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
-  print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
-  print "</tr>";
+   print "<td>$next</td>";
+ }
+ print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
+ print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
+ print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
+ print "</tr>";
 }
 
 

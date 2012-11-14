@@ -41,20 +41,28 @@ print "</table>";
 # if post, create a portfolio
 # otherwise, make form
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
+  # get sys_guid() from db and store it in a local variable
+  eval {@row=ExecSQL($dbuser, $dbpasswd, "select sys_guid() from dual", undef)};
+  if ($@) { print "error";} else { print "ok"; }
+  print @row->[0]->[0];
+  my $portfolio_id = @row->[0]->[0];
+   
+
   # create portfolio
-  my $portfolio_id = param('portfolio_id');
+  #my $portfolio_id = param('portfolio_id');
   my $cash = param('cash');
 
-  eval {@row=ExecSQL($dbuser, $dbpasswd, "insert into portfolio values ($portfolio_id, '$login')", undef)};
+  eval {@row=ExecSQL($dbuser, $dbpasswd, "insert into portfolio (id, email) values ('$portfolio_id', '$login')", undef)};
   if ($@) {
-    print "error occurred<br>";
+    print "error occurred<br> $DBI::errstr<br>";
   } else {
     print "no error occurred<br>";
   }
 
+
   # add the initial transaction
   eval {@row=ExecSQL($dbuser, $dbpasswd, "insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id)
-                                          values (?, ?, ?, ?, ?, ?, ?)", undef, "cash", "0", "0", "cash", $cash, $login, $portfolio_id);}; 
+                                          values (?, ?, ?, ?, ?, ?, ? )", undef, "cash", "0", "0", "cash", $cash, $login, $portfolio_id);}; 
   if ($@) {
     print "error occurred<br>";
   } else {
@@ -66,7 +74,6 @@ else {
   print start_form(-name=>'CreatePortfolio', -type=>'post'),
   h2('New Portfolio'), "<fieldset>",
   hidden(-name=>'action',default=>['login']),
-  "ID: ", textfield(-name=>'portfolio_id'),"<br><br>",
   "Cash: ", textfield(-name=>'cash'), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">", "</fieldset>";
 }

@@ -6,9 +6,16 @@ my $pass = 'default';
 
 my $login = cookie('login');
 
+# if no portfolio_id parameter provided, just up and die!
+if (param('portfolio_id')==undef) {die;}
+
+my $portfolio_id = param('portfolio_id');
+
+print "<br>Portfolio ID: $portfolio_id<br>";
+
 sub CashHoldings {
   eval {@col=ExecSQL($dbuser, $dbpasswd,
-   "select cashholding from transaction where email='$login' AND rownum<=1 order by ts DESC",
+   "select cashholding from transaction where email='$login' and portfolio_id=$portfolio_id AND rownum<=1 order by ts DESC",
    "COL" )};
   if ($@) {
     print "there was an error<br> $DBI::errstr<br>";
@@ -23,7 +30,7 @@ sub CashHoldings {
    #       "COL" )};
 
 
-$ret = sql_jon_version("select stocks.symbol, amount from stocks, hasstock where email='$login'");
+$ret = sql_jon_version("select stocks.symbol, amount from stocks, hasstock where email='$login' and hasstock.portfolio_id=$portfolio_id");
 print Dumper(@ret);
 print "<table class=\"table table-striped\">";
 print "<thead>";

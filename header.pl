@@ -240,6 +240,7 @@ print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <a class=\"brand\" href=\"#\">Portfolioliolio</a>
 <ul class=\"nav\">
 <li ><a href=\"portfolio.pl\">Home</a></li>
+<li><a href=\"history.pl\">History</a></li>
 <li><a href=\"login.pl\">Login</a></li>
 <li><a href=\"register.pl\">Register</a></li>
 </ul>

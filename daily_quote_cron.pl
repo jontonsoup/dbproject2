@@ -8,7 +8,6 @@ use CGI::Carp qw(fatalsToBrowser);
 use DBI;
 use Time::ParseDate;
 
-
 BEGIN {
 	unless ($ENV{BEGIN_BLOCK}) {
 		use Cwd;
@@ -57,13 +56,15 @@ sub getstock{
 				$close = $quotes{$symbol,"close"};
 				$open = $quotes{$symbol,"open"};
 				$volume = $quotes{$symbol,"volume"};
+				my $time1 = parsedate($time . $time);
+
 
 				foreach $key (@info) {
 					if (defined($quotes{$symbol,$key})) {
 						print $key,"\t",$quotes{$symbol,$key},"\n";
 					}
 				}
-				sql_jon_version("insert into stocksdaily (symbol,ts,high,low,close,open,volume) values ('$symbol',TO_DATE('$date', 'MM/DD/YYYY'),'$high','$low','$close','$open','$volume')");
+				sql_jon_version("insert into stocksdaily (symbol,ts,high,low,close,open,volume) values ('$symbol', '$time1','$high','$low','$close','$open','$volume')");
 
 			}
 			print "\n";
@@ -100,12 +101,12 @@ sub getstock{
 		return $ret;
 	}
 
-	$ret = sql_jon_version("select symbol from cs339.stockssymbols");
-	foreach $row (@$ret){
-		foreach $next (@$row){
-			getstock($next);
-		}
-	}
+	# $ret = sql_jon_version("select symbol from cs339.stockssymbols");
+	# foreach $row (@$ret){
+	# 	foreach $next (@$row){
+	# 		getstock($next);
+	# 	}
+	# }
 
 	$ret = sql_jon_version("select symbol from stocks");
 	foreach $row (@$ret){

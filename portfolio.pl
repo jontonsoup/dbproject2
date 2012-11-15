@@ -25,7 +25,8 @@ sub CashHoldings {
 
 sub get_stocks {
   $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
-  print Dumper(@ret);
+
+  print "<h2>Current Portfolio</h2>";
   print "<table class=\"table table-striped\">";
   print "<thead>";
   print "<tr><td>Stock</td><td># Shares</td><td>Past Performance</td><td>Future Performance</td><td>Strategy</td></tr>";
@@ -53,8 +54,20 @@ sub trade_request {
   hidden(-name=>'portfolio_id', default=>[$portfolio_id]),
   "Stock: ", textfield(-name=>'symbol'), "<br><br>",
   "Shares: ", textfield(-name=>'amount'), "<br><br>",
-  radio_group(-name=>'buy_or_sell', -values=>['buy', 'sell']), "<br><br>";
+  radio_group(-name=>'buy_or_sell', -values=>['Buy ', 'Sell ']), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+  $ret = sql_jon_version("select symbol from cs339.stockssymbols ");
+  print "<h3>Available Stocks to Buy</h3>";
+  print "<div style=\"height:150px; overflow:scroll;\">";
+  print "<table class=\"table table-striped\">";
+  print "<thead>";
+  print "<tr><td>Stock</td></tr>";
+  print "<tbody>";
+  foreach $row (@$ret){
+    print "<tr><td>", $row->[0], "</td></tr>";
+  }
+  print "</tbody></table>";
+  print "</div>";
 }
 
 if($ENV{'REQUEST_METHOD'} eq "POST") {
@@ -68,7 +81,7 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
     print "amount = $amount<br>";
     print "buy_or_sell = $buy_or_sell<br>";
     print "user = $login<br>";
-    
+
     my $ret;
     $ret = sql_jon_version("select count(*) from cs339.stockssymbols where symbol=rpad('$symbol',16)");
     # check if the stock exists
@@ -76,10 +89,10 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
       print "$symbol is a legit stock<br>";
       $ret = sql_jon_version("select close from stocksdaily where symbol='$symbol' and rownum <=1 order by ts desc");
       my $price = $ret->[0]->[0];
-      print "price = $price<br>";
+      print "Price = $price<br>";
       $ret = sql_jon_version("select cashholding from transaction where email='$login' AND rownum<=1 order by ts DESC");
       my $cash = $ret->[0]->[0];
-      print "holdings: $cash<br>";
+      print "Holdings: $cash<br>";
 
       $ret = sql_jon_version("select amount from hasstock where symbol = '$symbol' and portfolio_id='$portfolio_id'");
       my $amount_owned = $ret->[0]->[0] or 0;
@@ -87,13 +100,13 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	$amount_owned = 0;
       }
 
-      print "you have $amount_owned shares of $symbol<br>";
+      print "You have $amount_owned shares of $symbol<br>";
 
       if ($buy_or_sell eq "buy") {
 	# checkif they gave you a number and you've got the moneys
 	if ($amount =~ /[0-9]+/) {
 	  if ($amount * $price <= $cash) {
-	    print "you have enough money!<br>";
+	    print "You have enough money!<br>";
 	    my $new_amount;
 	    my $new_holdings;
 
@@ -109,7 +122,7 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 
 	    print "New amount: $new_amount<br>";
 	    print "New balance: $new_holdings<br>";
-	    
+
 	  }
 	  else {
 	    print "You do not have enough money for that transaction, bru<br>";
@@ -137,7 +150,7 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	  print "You don't have that many shares to sell<br>";
 	}
       }
-      
+
     } else {
       print "Invalid stock symbol";
     }

@@ -62,3 +62,7 @@ CREATE TABLE hasstock
 	amount NUMBER,
 	symbol varchar(10) NOT NULL REFERENCES stocks(symbol)
 );
+
+CREATE VIEW stock_values 
+as 
+SELECT symbol, close, amount, ts, portfolio_id from stocksdaily natural join hasstock;

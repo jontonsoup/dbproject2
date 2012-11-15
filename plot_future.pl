@@ -4,13 +4,14 @@
 use CGI qw(:standard);
 use DBI;
 use Time::ParseDate;
+use Data::Dumper;
 
 BEGIN {
   $ENV{PORTF_DBMS}="oracle";
   $ENV{PORTF_DB}="cs339";
   $ENV{PORTF_DBUSER}="jmf716";
   $ENV{PORTF_DBPASS}="RR62rwno";
-
+  $ENV{PATH} = "$ENV{PATH}:/usr/lib64/qt-3.3/bin:/usr/NX/bin:/usr/local/bin:/bin:/usr/bin:/home/jmf716/bin:/home/jmf716/eecs340/proj1/minet-netclass-w12:/home/jmf716/eecs340/proj1/minet-netclass-w12/bin:/home/jmf716/www/portfolio/:/raid/oracle11g/app/oracle/product/11.2.0.1.0/db_1/bin";
   unless ($ENV{BEGIN_BLOCK}) {
     use Cwd;
     $ENV{ORACLE_BASE}="/raid/oracle11g/app/oracle/product/11.2.0.1.0";
@@ -80,29 +81,31 @@ if (!defined($type) || $type eq "text" || !($type eq "plot") ) {
 }
 
 
-my @rows = ExecStockSQL("2D","select timestamp, close from ".GetStockPrefix()."StocksDaily where symbol=rpad(?,16)",$symbol);
-my $ret = sql_jon_version("select ts, close from stocksdaily where symbol='$symbol'");
+my @rows= `time_series_symbol_project.pl $symbol 8 AWAIT 300 ARIMA 2 1 2 | tail -50 2>&1`;
+ #  foreach $row (@rows){
+ #    @row = split(' ', $row);
+ # }
 
-
-foreach $row (@$ret){
-  push @rows, $row;
-  foreach $next (@$row){
-   # print "$next<br>";
- }
-}
-if ($type eq "text") {
+ @rows = map(split(' ', $_), @rows);
+ if ($type eq "text") {
   print "<table class=\"table table-striped\">";
-  foreach my $r (@rows) {
-    print "<tr>";
-    print "<td>", $r->[0], "</td><td>", $r->[1], "</td>";
-    print "</tr>";
-  }
-  print "</table>";
+  print "<thead>";
+  print "<tr><td>Time</td><td>Past Value</td><td>Predicted Value</td></tr>";
+  print "<tbody>";
 
-  print "</body>";
-  print "</html>";
+  for ($count = 0; $count < scalar (@rows); $count = $count + 3) {
+   print "<tr>";
+   print "<td>",@rows[$count], "</td>";
+   print "<td>",@rows[$count + 1], "</td>";
+   print "<td>",@rows[$count + 2], "</td>";
+   print "</tr>";
+ }
+ print "</table>";
 
-  } elsif ($type eq "plot") {
+ print "</body>";
+ print "</html>";
+
+ } elsif ($type eq "plot") {
 #
 # This is how to drive gnuplot to produce a plot
 # The basic idea is that we are going to send it commands and data
@@ -117,6 +120,16 @@ open(GNUPLOT,"| gnuplot") or die "Cannot run gnuplot";
   foreach my $r (@rows) {
     print GNUPLOT $r->[0], "\t", $r->[1], "\n";
   }
+  for ($count = 0; $count < scalar (@rows); $count = $count + 3) {
+    if (.00001 > @rows[$count + 1]){
+      print GNUPLOT @rows[$count], "\t", @rows[$count + 2],"\n";
+    }
+    else{
+      print GNUPLOT @rows[$count], "\t", @rows[$count + 1],"\n";
+    }
+  }
+  # print GNUPLOT "10", "\t", "100","\n";
+  # print GNUPLOT "11", "\t", "100","\n";
   print GNUPLOT "e\n"; # end of data
 
   #

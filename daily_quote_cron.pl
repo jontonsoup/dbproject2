@@ -77,7 +77,6 @@ sub getstock{
 			}
 			print "\n";
 		}
-
 	}
 
 	sub sql_jon_version {

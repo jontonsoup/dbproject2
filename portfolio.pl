@@ -68,7 +68,6 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
       $ret = sql_jon_version("select close from stocksdaily where symbol='$symbol' and rownum <=1 order by ts desc");
       my $price = $ret->[0]->[0];
       print "price = $price<br>";
-      # TODO update with portfolio_num
       $ret = sql_jon_version("select cashholding from transaction where email='$login' AND rownum<=1 order by ts DESC");
       my $cash = $ret->[0]->[0];
       print "holdings: $cash<br>";
@@ -110,7 +109,23 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	  print "$amount is not a number, it's a free man!<br>";
 	}
       } else {
-	print "sell sell sell!";
+	my $new_amount;
+	$new_amount = $amount_owned - $amount;
+	if ($new_amount >= 0) {
+	  print "You'll have $new_amount of shares of $symbol left";
+	  my $new_holdings = $cash + ($price * $amount);
+	  # add the transaction
+	  sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email) values('$symbol', $price, $amount, 'sell', $new_holdings, '$login')");
+	  # if >0 left, update hasstock
+	  if ($new_amount > 0) {
+	    sql_jon_version("update hasstock set amount=$new_amount where email='$login' and symbol='$symbol'");
+	  } else {
+	    # else delete from hasstock
+	    sql_jon_version("delete from hasstock where email='$login' and symbol='$symbol'");
+	  }
+	} else {
+	  print "You don't have that many shares to sell<br>";
+	}
       }
       
     } else {

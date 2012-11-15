@@ -79,9 +79,10 @@ if (!defined($type) || $type eq "text" || !($type eq "plot") ) {
     # $symbol = 'AAPL'; # default
   }
 }
+my $time = param("time");
+my $steps = $time + 300;
 
-
-my @rows= `time_series_symbol_project.pl $symbol 8 AWAIT 300 ARIMA 2 1 2 | tail -50 2>&1`;
+my @rows= `time_series_symbol_project.pl $symbol $time AWAIT $steps ARIMA 2 1 2 | tail -$steps 2>&1`;
  #  foreach $row (@rows){
  #    @row = split(' ', $row);
  # }

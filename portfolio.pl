@@ -50,7 +50,20 @@ sub get_stocks {
   print "</table>";
 
 }
+
+sub add_money {
+   print start_form(-name=>'addmoney', -type=>"post"),
+  h2('Withdraw \ Deposit Cash'), "<fieldset>",
+  hidden(-name=>'action', default=>['cash']),
+  hidden(-name=>'portfolio_id', default=>[$portfolio_id]),
+  "Amount : ", textfield(-name=>'amount'), "<br><br>",
+  radio_group(-name=>'add_or_subtract', -values=>['Withdraw ', 'Deposit ']), "<br><br>";
+  print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+
+}
+
 sub trade_request {
+  print"<br><hr>";
   print start_form(-name=>'Trade', -type=>"post"),
   h2('Trade stocks'), "<fieldset>",
   hidden(-name=>'action', default=>['trade']),
@@ -60,6 +73,7 @@ sub trade_request {
   radio_group(-name=>'buy_or_sell', -values=>['Buy ', 'Sell ']), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
   $ret = sql_jon_version("select symbol from cs339.stockssymbols ");
+  print"<br><hr>";
   print "<h3>Available Stocks to Buy</h3>";
   print "<div style=\"height:150px; overflow:scroll;\">";
   print "<table class=\"table table-striped\">";
@@ -71,6 +85,7 @@ sub trade_request {
   }
   print "</tbody></table>";
   print "</div>";
+  print "<hr>";
 }
 
 if($ENV{'REQUEST_METHOD'} eq "POST") {
@@ -166,5 +181,6 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 CashHoldings();
 get_stocks();
 trade_request();
+add_money();
 
 require "footer.pl";

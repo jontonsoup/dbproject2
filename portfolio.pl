@@ -17,48 +17,72 @@ sub CashHoldings {
    "COL" )};
   if ($@) {
     print "there was an error<br> $DBI::errstr<br>";
-  } else {
-    my $cash = $col[0];
-    print "<h2>Cash holdings: $col[0]</h2>";
-  }
-  $ret = sql_jon_version("select sum(close * amount) as \"TOTAL_VALUE\" from stock_values where portfolio_id = '$portfolio_id' and ts = (select max(ts) from stocksdaily where stocksdaily.symbol = stock_values.symbol)");
-  my $total = $ret->[0]->[0];
-  print "<h2>Total Portfolio Value: $total</h2>";
-}
-
-sub get_stocks {
-  $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
-
-  print "<h2>Current Portfolio</h2>";
-  print "<table class=\"table table-striped\">";
-  print "<thead>";
-  print "<tr><td>Stock</td><td># Shares</td><td>Past Performance</td><td>Future Performance</td><td>Strategy</td></tr>";
-  print "<tbody>";
-  foreach $row (@$ret){
-    print "<tr>";
-    foreach $next (@$row){
-      print "<td>$next</td>";
+    } else {
+      my $cash = $col[0];
+      print "<h2>Cash holdings: $col[0]</h2>";
     }
-    print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
-    print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
-    print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $row->[0] . "\">Go</a></td>";
-    print "</tr>";
+    $ret = sql_jon_version("select sum(close * amount) as \"TOTAL_VALUE\" from stock_values where portfolio_id = '$portfolio_id' and ts = (select max(ts) from stocksdaily where stocksdaily.symbol = stock_values.symbol)");
+    my $total = $ret->[0]->[0];
+    print "<h2>Total Portfolio Value: $total</h2>";
   }
 
+  sub get_stocks {
+    $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
 
-  print "</tbody>";
-  print "</table>";
+    print "<h2>Current Portfolio</h2>";
+    print "<table class=\"table table-striped\">";
+    print "<thead>";
+    print "<tr><td>Stock</td><td># Shares</td><td>Past Performance</td><td>Future Performance</td><td>Strategy</td></tr>";
+    print "<tbody>";
+    foreach $row (@$ret){
+      print "<tr>";
+      foreach $next (@$row){
+        print "<td>$next</td>";
+      }
+      print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
+      print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
+      print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $row->[0] . "\">Go</a></td>";
+      print "</tr>";
+    }
 
-}
 
-sub add_money {
+    print "</tbody>";
+    print "</table>";
+
+  }
+
+  sub add_money {
    print start_form(-name=>'addmoney', -type=>"post"),
-  h2('Withdraw \ Deposit Cash'), "<fieldset>",
-  hidden(-name=>'action', default=>['cash']),
-  hidden(-name=>'portfolio_id', default=>[$portfolio_id]),
-  "Amount : ", textfield(-name=>'amount'), "<br><br>",
-  radio_group(-name=>'add_or_subtract', -values=>['Withdraw ', 'Deposit ']), "<br><br>";
-  print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+   h2('Withdraw \ Deposit Cash'), "<fieldset>",
+   hidden(-name=>'action', default=>['cash']),
+   hidden(-name=>'portfolio_id', default=>[$portfolio_id]),
+   "Amount : ", textfield(-name=>'amount'), "<br><br>",
+   radio_group(-name=>'add_or_subtract', -values=>['Withdraw', 'Deposit']), "<br><br>";
+   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+   print "</form>";
+   if($ENV{'REQUEST_METHOD'} eq "POST") {
+    if (param('action') eq "cash") {
+      my $amount = param("amount");
+      my $add_or_subtract = param("add_or_subtract");
+      $ret = sql_jon_version("select cashholding from transaction where email='$login' AND rownum<=1 order by ts DESC");
+      my $cash = $ret->[0]->[0];
+      if ($add_or_subtract eq "Withdraw"){
+        $new_holdings = $cash - $amount;
+        if($amount > $cash){
+          print "<h3>You don't have enough money for that!</h3>";
+        }
+        else {
+           print "<h3>Done!</h3>";
+          $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('cash', 0, $amount, 'Withdraw', $new_holdings, '$login', '$portfolio_id')");
+        }
+      }
+      elsif($add_or_subtract eq "Deposit"){
+        $new_holdings = $cash + $amount;
+        $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('cash', 0, $amount, 'Withdraw', $new_holdings, '$login', '$portfolio_id')");
+         print "<h3>Done!</h3>";
+      }
+    }
+  }
 
 }
 
@@ -72,6 +96,7 @@ sub trade_request {
   "Shares: ", textfield(-name=>'amount'), "<br><br>",
   radio_group(-name=>'buy_or_sell', -values=>['Buy ', 'Sell ']), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+  print "</form>";
   $ret = sql_jon_version("select symbol from cs339.stockssymbols ");
   print"<br><hr>";
   print "<h3>Available Stocks to Buy</h3>";
@@ -95,10 +120,10 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
     my $symbol = uc param("symbol");
     my $amount = param("amount");
     my $buy_or_sell = param("buy_or_sell");
-    print "symbol=$symbol<br>";
-    print "amount = $amount<br>";
-    print "buy_or_sell = $buy_or_sell<br>";
-    print "user = $login<br>";
+    # print "symbol=$symbol<br>";
+    # print "amount = $amount<br>";
+    # print "buy_or_sell = $buy_or_sell<br>";
+    # print "user = $login<br>";
 
     my $ret;
     $ret = sql_jon_version("select count(*) from cs339.stockssymbols where symbol=rpad('$symbol',16)");
@@ -115,67 +140,66 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
       $ret = sql_jon_version("select amount from hasstock where symbol = '$symbol' and portfolio_id='$portfolio_id'");
       my $amount_owned = $ret->[0]->[0] or 0;
       if (! defined $amount_owned) {
-	$amount_owned = 0;
-      }
+       $amount_owned = 0;
+     }
 
-      print "You have $amount_owned shares of $symbol<br>";
+     print "You have $amount_owned shares of $symbol<br>";
 
-      if ($buy_or_sell eq "buy") {
+     if ($buy_or_sell eq "buy") {
 	# checkif they gave you a number and you've got the moneys
 	if ($amount =~ /[0-9]+/) {
-	  if ($amount * $price <= $cash) {
-	    print "You have enough money!<br>";
-	    my $new_amount;
-	    my $new_holdings;
+   if ($amount * $price <= $cash) {
+     print "You have enough money!<br>";
+     my $new_amount;
+     my $new_holdings;
 
-	    $new_amount = $amount_owned + $amount;
-	    $new_holdings = $cash - ($amount * $price);
+     $new_amount = $amount_owned + $amount;
+     $new_holdings = $cash - ($amount * $price);
 
-	    $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'buy', $new_holdings, '$login', '$portfolio_id')");
-	    if ($amount_owned == 0) {
-	      sql_jon_version("insert into hasstock (portfolio_id, symbol, amount) values ('$portfolio_id', '$symbol', $new_amount)");
-	    } else {
-	      sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
-	    }
+     $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'buy', $new_holdings, '$login', '$portfolio_id')");
+     if ($amount_owned == 0) {
+       sql_jon_version("insert into hasstock (portfolio_id, symbol, amount) values ('$portfolio_id', '$symbol', $new_amount)");
+       } else {
+         sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
+       }
 
-	    print "New amount: $new_amount<br>";
-	    print "New balance: $new_holdings<br>";
+       print "New amount: $new_amount<br>";
+       print "New balance: $new_holdings<br>";
 
-	  }
-	  else {
-	    print "You do not have enough money for that transaction, bru<br>";
-	  }
-	} else {
-	  print "$amount is not a number, it's a free man!<br>";
-	}
-      } else {
-	my $new_amount;
-	$new_amount = $amount_owned - $amount;
-	if ($new_amount >= 0) {
-	  print "You'll have $new_amount shares of $symbol left";
-	  my $new_holdings = $cash + ($price * $amount);
+     }
+     else {
+       print "You do not have enough money for that transaction, bru<br>";
+     }
+     } else {
+       print "$amount is not a number, it's a free man!<br>";
+     }
+     } else {
+       my $new_amount;
+       $new_amount = $amount_owned - $amount;
+       if ($new_amount >= 0) {
+         print "You'll have $new_amount shares of $symbol left";
+         my $new_holdings = $cash + ($price * $amount);
 	  # add the transaction
 	  sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'sell', $new_holdings, '$login', '$portfolio_id')");
 	  # if >0 left, update hasstock
 	  if ($new_amount > 0) {
-	    print "got here";
-	    sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
-	  } else {
+     print "got here";
+     sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
+     } else {
 	    # else delete from hasstock
 	    sql_jon_version("delete from hasstock where portfolio_id='$portfolio_id' and symbol='$symbol'");
 	  }
-	} else {
-	  print "You don't have that many shares to sell<br>";
-	}
-      }
+   } else {
+     print "You don't have that many shares to sell<br>";
+   }
+ }
 
-    } else {
-      print "Invalid stock symbol";
-    }
-  }
-  else {
-    print "Post, bru";
-  }
+ } else {
+  print "Invalid stock symbol";
+}
+}
+else {
+}
 }
 
 CashHoldings();

@@ -1,11 +1,13 @@
 #!/usr/bin/perl -w
 require "header.pl";
 
-
-if ($ENV{'REQUEST_METHOD'} eq "POST") {
-  print "<h2>Thanks for logging in!</h2>";
-  print "<a href=\"portfolio.pl\" class= \"btn\">Go Home!</a>";
+if (!(cookie('login') eq undef)) {
+  print "<a href=\"manage_portfolios.pl\" class= \"btn\">Manage Portfolios</a>";
 }
+
+
+#if ($ENV{'REQUEST_METHOD'} eq "POST") {
+#}
 
 else {
 

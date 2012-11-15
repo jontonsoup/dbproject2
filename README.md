@@ -2,7 +2,9 @@
 
 ## To Do
 
-- page: history of transactions
+- page: history of transactions DONE
+- update DB to allow one or more portfolios
+  - change database.sql DONE
 
 ## DB changes
 
@@ -11,7 +13,12 @@
 - removed symbol as primary key from transaction (there could be multiple 
   transactions with the same stock symbol)
 - add timestamp (ts) as primary key of transaction
-
+- updated database to support many portfolios to many users
+  - portfolio table readded
+  - portfolio_id added to transaction
+  - timestamp change by Jon
+  - hastransaction and hasstock updated
+  - file added to drop all tables quickly (drop_tables.sql)
 
 ## Useful Queries
 

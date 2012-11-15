@@ -5,6 +5,15 @@
 - page: history of transactions DONE
 - update DB to allow one or more portfolios
   - change database.sql DONE
+  - change queries for new schema DONE
+- buy/sell of stocks DONE
+- past/future performance DONE
+- portfolio stats
+  - coeff of var and beta for each stock
+  - covariance matrix of stocks in portfolio
+- strategy eval
+- viewing portfolios
+
 
 ## DB changes
 

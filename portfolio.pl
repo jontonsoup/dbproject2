@@ -30,7 +30,7 @@ sub CashHoldings {
    #       "COL" )};
 
 
-$ret = sql_jon_version("select stocks.symbol, amount from stocks, hasstock where email='$login' and hasstock.portfolio_id=$portfolio_id");
+$ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
 print Dumper(@ret);
 print "<table class=\"table table-striped\">";
 print "<thead>";

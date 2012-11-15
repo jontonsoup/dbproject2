@@ -3,7 +3,7 @@ require "header.pl";
 use Data::Dumper;
 
 my $login = cookie('login');
-  
+
 print "<h2>Your Portfolios</h2>";
 
 # display table of portfolios
@@ -21,7 +21,7 @@ foreach $row (@$ret){
     if ($ind == 0) {
      print "<td><a href=\"portfolio.pl?portfolio_id=$next\" class=\"btn\">$next</a></td>";
     } else {
-     print "<td>$next<td>";
+     print "<td>$next</td>";
     }
     $ind = $ind + 1;
   }
@@ -49,7 +49,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   if ($@) { print "error";} else {  }
   #print @row->[0]->[0];
   my $portfolio_id = @row->[0]->[0];
-   
+
 
   # create portfolio
   #my $portfolio_id = param('portfolio_id');
@@ -65,7 +65,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 
   # add the initial transaction
   eval {@row=ExecSQL($dbuser, $dbpasswd, "insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id)
-                                          values (?, ?, ?, ?, ?, ?, ? )", undef, "cash", "0", "0", "cash", $cash, $login, $portfolio_id);}; 
+                                          values (?, ?, ?, ?, ?, ?, ? )", undef, "cash", "0", "0", "cash", $cash, $login, $portfolio_id);};
   if ($@) {
     print "error occurred<br>";
   } else {
@@ -73,7 +73,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
     print "<h3>now, reload</h3>";
   }
   }
-  
+
 }
 else {
   print start_form(-name=>'CreatePortfolio', -type=>'post'),

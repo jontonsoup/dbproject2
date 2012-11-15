@@ -16,8 +16,7 @@ sub CashHoldings {
   $ret = sql_jon_version("select cashholding from (select * from transaction where email='$login' and portfolio_id='$portfolio_id' order by ts DESC) where rownum<=1");
   my $cash = $ret->[0]->[0];
   print "<h2>Cash holdings: $cash</h2>";
-
-  $ret = sql_jon_version("select sum(close * amount) from stock_values where portfolio_id = '$portfolio_id' and ts = (select max(ts) from stocksdaily where stocksdaily.symbol = stock_values.symbol)");
+  $ret = sql_jon_version("select sum(close*amount) from most_recent_stockinfo natural join hasstock where portfolio_id = '$portfolio_id'");
   my $total = $ret->[0]->[0];
   print "<h2>Total Portfolio Value: $total</h2>";
 }
@@ -93,16 +92,19 @@ sub trade_request {
   radio_group(-name=>'buy_or_sell', -values=>['Buy ', 'Sell ']), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
   print "</form>";
-  $ret = sql_jon_version("select symbol from cs339.stockssymbols ");
+  $ret = sql_jon_version("select symbol, close from most_recent_stockinfo where close is not null order by symbol");
   print"<br><hr>";
   print "<h3>Available Stocks to Buy</h3>";
   print "<div style=\"height:150px; overflow:scroll;\">";
   print "<table class=\"table table-striped\">";
   print "<thead>";
-  print "<tr><td>Stock</td></tr>";
+  print "<tr><td>Stock</td><td>Current Price</td></tr>";
   print "<tbody>";
   foreach $row (@$ret){
-    print "<tr><td>", $row->[0], "</td></tr>";
+    print "<tr>";
+    print "<td>", $row->[0], "</td>";
+    print "<td>", $row->[1], "</td>";
+    print "</tr>";
   }
   print "</tbody></table>";
   print "</div>";
@@ -179,7 +181,6 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	  sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'sell', $new_holdings, '$login', '$portfolio_id')");
 	  # if >0 left, update hasstock
 	  if ($new_amount > 0) {
-	    print "got here";
 	    sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
 	  } else {
 	    # else delete from hasstock

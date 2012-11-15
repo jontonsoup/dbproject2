@@ -63,6 +63,10 @@ CREATE TABLE hasstock
 	symbol varchar(10) NOT NULL REFERENCES stocks(symbol)
 );
 
-CREATE VIEW stock_values 
+create VIEW most_recent_timestamp
+as
+SELECT symbol, max(ts) as "TS" from stocksdaily group by symbol;
+
+create VIEW most_recent_stockinfo
 as 
-SELECT symbol, close, amount, ts, portfolio_id from stocksdaily natural join hasstock;
+SELECT * from stocksdaily natural join most_recent_timestamp where close is not null;

@@ -25,11 +25,6 @@ sub trade_request {
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
 }
 sub get_stocks {
-  # eval {@col1=ExecSQL($dbuser, $dbpasswd,
-  #       "select stocks.symbol, amount from stocks, hasstock where email='$login'",
-  #       "COL" )};
-
-
   $ret = sql_jon_version("select stocks.symbol, amount from stocks, hasstock where email='$login'");
   print Dumper(@ret);
   print "<table class=\"table table-striped\">";
@@ -72,19 +67,33 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
       print "$symbol is a legit stock<br>";
       $ret = sql_jon_version("select close from stocksdaily where symbol='$symbol' and rownum <=1 order by ts desc");
       my $price = $ret->[0]->[0];
-      print "price = $price";
+      print "price = $price<br>";
+      # TODO update with portfolio_num
+      $ret = sql_jon_version("select cashholding from transaction where email='$login' AND rownum<=1 order by ts DESC");
+      my $cash = $ret->[0]->[0];
+      print "holdings: $cash<br>";
+
+      $ret = sql_jon_version("select amount from hasstock where symbol='$symbol' and email='$login'");
+      my $amount_owned = $ret->[0]->[0];
+
+      if ($buy_or_sell eq "buy") {
+	# checkif they gave you a number and you've got the moneys
+	if ($amount =~ /[0-9]+/) {
+	  if ($amount * $price <= $cash) {
+	    print "you have enough money!<br>";
+	    
+	  }
+	  else {
+	    print "You do not have enough money for that transaction, bru<br>";
+	  }
+	} else {
+	  print "$amount is not a number, it's a free man!<br>";
+	}
+      }
+      
     } else {
       print "Invalid stock symbol";
     }
-    # foreach $row (@$ret){
-    #   print "<tr>";
-    #   foreach $next (@$row){
-    # 	print "<td>$next</td>";
-    #   }
-    #   print "<td>" . $ret->[0]->[0] . "</td>";
-    #   print "</tr>";
-    # }
-
   }
   else {
     print "Post, bru";

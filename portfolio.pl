@@ -127,13 +127,13 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
     $ret = sql_jon_version("select count(*) from cs339.stockssymbols where symbol=rpad('$symbol',16)");
     # check if the stock exists
     if ($ret->[0]->[0] == 1) {
-      print "$symbol is a legit stock<br>";
+      # print "$symbol is a legit stock<br>";
       $ret = sql_jon_version("select close from (select * from stocksdaily where symbol='$symbol' order by ts desc) where rownum <=1");
       my $price = $ret->[0]->[0];
-      print "Price = $price<br>";
+      # print "Price = $price<br>";
       $ret = sql_jon_version("select cashholding from (select * from transaction where email='$login' and portfolio_id='$portfolio_id' order by ts DESC) where rownum<=1");
       my $cash = $ret->[0]->[0];
-      print "Holdings: $cash<br>";
+      # print "Holdings: $cash<br>";
 
       $ret = sql_jon_version("select amount from hasstock where symbol = '$symbol' and portfolio_id='$portfolio_id'");
       my $amount_owned = $ret->[0]->[0] or 0;
@@ -141,13 +141,13 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	$amount_owned = 0;
       }
 
-      print "You have $amount_owned shares of $symbol<br>";
+      # print "You have $amount_owned shares of $symbol<br>";
 
       if ($buy_or_sell eq "Buy ") {
 	# checkif they gave you a number and you've got the moneys
 	if ($amount =~ /[0-9]+/) {
 	  if ($amount * $price <= $cash) {
-	    print "You have enough money!<br>";
+	    # print "You have enough money!<br>";
 	    my $new_amount;
 	    my $new_holdings;
 
@@ -161,8 +161,8 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	      sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
 	    }
 
-	    print "New amount: $new_amount<br>";
-	    print "New balance: $new_holdings<br>";
+	    # print "New amount: $new_amount<br>";
+	    # print "New balance: $new_holdings<br>";
 
 	  }
 	  else {

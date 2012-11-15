@@ -4,10 +4,17 @@ use Data::Dumper;
 
 my $login = cookie('login');
 
+# if no portfolio_id parameter provided, just up and die!
+if (param('portfolio_id') eq undef) {die;}
+
+my $portfolio_id = param('portfolio_id');
+
+print "<br>Portfolio ID: $portfolio_id<br>";
+
 sub CashHoldings {
   eval {@col=ExecSQL($dbuser, $dbpasswd,
-		     "select cashholding from transaction where email='$login' AND rownum<=1 order by ts DESC",
-		     "COL" )};
+   "select cashholding from transaction where email='$login' and portfolio_id='$portfolio_id' AND rownum<=1 order by ts DESC",
+   "COL" )};
   if ($@) {
     print "there was an error<br> $DBI::errstr<br>";
   } else {
@@ -15,17 +22,9 @@ sub CashHoldings {
     print "<h2>Cash holdings: $col[0]</h2>";
   }
 }
-sub trade_request {
-  print start_form(-name=>'Trade', -type=>"post"),
-  h2('Trade stocks'), "<fieldset>",
-  hidden(-name=>'action', default=>['trade']),
-  "Stock: ", textfield(-name=>'symbol'), "<br><br>",
-  "Shares: ", textfield(-name=>'amount'), "<br><br>",
-  radio_group(-name=>'buy_or_sell', -values=>['buy', 'sell']), "<br><br>";
-  print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
-}
+
 sub get_stocks {
-  $ret = sql_jon_version("select stocks.symbol, amount from stocks, hasstock where email='$login'");
+  $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
   print Dumper(@ret);
   print "<table class=\"table table-striped\">";
   print "<thead>";
@@ -36,9 +35,9 @@ sub get_stocks {
     foreach $next (@$row){
       print "<td>$next</td>";
     }
-    print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
-    print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
-    print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $ret->[0]->[0] . "\">Go</a></td>";
+    print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
+    print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
+    print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $row->[0] . "\">Go</a></td>";
     print "</tr>";
   }
 
@@ -46,6 +45,16 @@ sub get_stocks {
   print "</tbody>";
   print "</table>";
 
+}
+sub trade_request {
+  print start_form(-name=>'Trade', -type=>"post"),
+  h2('Trade stocks'), "<fieldset>",
+  hidden(-name=>'action', default=>['trade']),
+  hidden(-name=>'portfolio_id', default=>[$portfolio_id]),
+  "Stock: ", textfield(-name=>'symbol'), "<br><br>",
+  "Shares: ", textfield(-name=>'amount'), "<br><br>",
+  radio_group(-name=>'buy_or_sell', -values=>['buy', 'sell']), "<br><br>";
+  print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
 }
 
 if($ENV{'REQUEST_METHOD'} eq "POST") {
@@ -72,7 +81,7 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
       my $cash = $ret->[0]->[0];
       print "holdings: $cash<br>";
 
-      $ret = sql_jon_version("select amount from hasstock where symbol = '$symbol' and email='$login'");
+      $ret = sql_jon_version("select amount from hasstock where symbol = '$symbol' and portfolio_id='$portfolio_id'");
       my $amount_owned = $ret->[0]->[0] or 0;
       if (! defined $amount_owned) {
 	$amount_owned = 0;
@@ -91,11 +100,11 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	    $new_amount = $amount_owned + $amount;
 	    $new_holdings = $cash - ($amount * $price);
 
-	    $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email) values('$symbol', $price, $amount, 'buy', $new_holdings, '$login')");
+	    $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'buy', $new_holdings, '$login', '$portfolio_id')");
 	    if ($amount_owned == 0) {
-	      sql_jon_version("insert into hasstock (email, symbol, amount) values ('$login', '$symbol', $new_amount)");
+	      sql_jon_version("insert into hasstock (portfolio_id, symbol, amount) values ('$portfolio_id', '$symbol', $new_amount)");
 	    } else {
-	      sql_jon_version("update hasstock set amount=$new_amount where email='$login' and symbol='$symbol'");
+	      sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
 	    }
 
 	    print "New amount: $new_amount<br>";
@@ -112,16 +121,17 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	my $new_amount;
 	$new_amount = $amount_owned - $amount;
 	if ($new_amount >= 0) {
-	  print "You'll have $new_amount of shares of $symbol left";
+	  print "You'll have $new_amount shares of $symbol left";
 	  my $new_holdings = $cash + ($price * $amount);
 	  # add the transaction
-	  sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email) values('$symbol', $price, $amount, 'sell', $new_holdings, '$login')");
+	  sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'sell', $new_holdings, '$login', '$portfolio_id')");
 	  # if >0 left, update hasstock
 	  if ($new_amount > 0) {
-	    sql_jon_version("update hasstock set amount=$new_amount where email='$login' and symbol='$symbol'");
+	    print "got here";
+	    sql_jon_version("update hasstock set amount=$new_amount where portfolio_id='$portfolio_id' and symbol='$symbol'");
 	  } else {
 	    # else delete from hasstock
-	    sql_jon_version("delete from hasstock where email='$login' and symbol='$symbol'");
+	    sql_jon_version("delete from hasstock where portfolio_id='$portfolio_id' and symbol='$symbol'");
 	  }
 	} else {
 	  print "You don't have that many shares to sell<br>";
@@ -139,6 +149,6 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 
 CashHoldings();
 trade_request();
-# get_stocks();
+get_stocks();
 
 require "footer.pl";

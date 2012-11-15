@@ -8,7 +8,6 @@ use CGI::Carp qw(fatalsToBrowser);
 use DBI;
 use Time::ParseDate;
 
-
 BEGIN {
 	unless ($ENV{BEGIN_BLOCK}) {
 		use Cwd;
@@ -24,11 +23,17 @@ BEGIN {
 $dbuser="jmf716";
 $dbpasswd="RR62rwno";
 
+sub rtrim{
+  my $string = $_;
+  $string =~ s/\s*$//;
+  return $string;
+}
+
 sub getstock{
 	@info=("date","time","high","low","close","open","volume");
 
 
-	@symbols=@_;
+	@symbols=map(rtrim, @_);
 
 	$con=Finance::Quote->new();
 
@@ -45,6 +50,7 @@ sub getstock{
 	$volume = '';
 
 	foreach $symbol (@symbols) {
+		print Dumper($symbol);
 		print $symbol,"\n=========\n";
 		if (!defined($quotes{$symbol,"success"})) {
 			print "No Data\n";
@@ -57,18 +63,20 @@ sub getstock{
 				$close = $quotes{$symbol,"close"};
 				$open = $quotes{$symbol,"open"};
 				$volume = $quotes{$symbol,"volume"};
+				my $time1 = parsedate("$date $time");
+				print "unix: ",$time1, "\n";
 
 				foreach $key (@info) {
 					if (defined($quotes{$symbol,$key})) {
 						print $key,"\t",$quotes{$symbol,$key},"\n";
 					}
 				}
-				sql_jon_version("insert into stocksdaily (symbol,ts,high,low,close,open,volume) values ('$symbol',TO_DATE('$date', 'MM/DD/YYYY'),'$high','$low','$close','$open','$volume')");
+				sql_jon_version("insert into stocks values ('$symbol',0,0,0)");
+				sql_jon_version("insert into stocksdaily (symbol,ts,high,low,close,open,volume) values ('$symbol', '$time1','$high','$low','$close','$open','$volume')");
 
 			}
 			print "\n";
 		}
-
 	}
 
 	sub sql_jon_version {
@@ -100,7 +108,8 @@ sub getstock{
 		return $ret;
 	}
 
-	$ret = sql_jon_version("select symbol from cs339.stockssymbols");
+	#none of the stocks in cs339.stocksymbols are in the online repo
+	$ret = sql_jon_version("select distinct symbol from cs339.stocksdaily");
 	foreach $row (@$ret){
 		foreach $next (@$row){
 			getstock($next);

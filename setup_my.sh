@@ -1,5 +1,5 @@
-export PORTF_DBMS='mysql'
-export PORTF_DB='cs339data'
-export PORTF_DBUSER='cs339'
-export PORTF_DBPASS='aPaSSwoRd!'
+export PORTF_DBMS='oracle'
+export PORTF_DB='cs339'
+export PORTF_DBUSER='jmf716'
+export PORTF_DBPASS='RR62rwno'
 

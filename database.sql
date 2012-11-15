@@ -5,6 +5,13 @@ CREATE TABLE stockuser
 	PRIMARY KEY (email)
 );
 
+CREATE TABLE portfolio
+(
+  id raw(32) NOT NULL,
+  email varchar(100) NOT NULL REFERENCES stockuser(email),
+  PRIMARY KEY (id)
+);
+
 CREATE TABLE stocks
 (
 	symbol varchar(10) NOT NULL,
@@ -23,7 +30,7 @@ CREATE TABLE stocksdaily
 	low NUMBER,
 	close NUMBER,
 	volume NUMBER,
-	ts TIMESTAMP,
+	ts NUMBER,
 	PRIMARY KEY (symbol)
 );
 
@@ -36,21 +43,22 @@ CREATE TABLE transaction
 	type varchar(10) NOT NULL,
 	cashholding NUMBER NOT NULL,
 	email varchar(100) NOT NULL,
+  portfolio_id raw(32) NOT NULL REFERENCES portfolio(id),
 	PRIMARY KEY (ts)
 );
 
 
 CREATE TABLE hastransaction
 (
-	email varchar(100) NOT NULL REFERENCES stockuser(email),
-	ts TIMESTAMP,
+  portfolio_id raw(32) NOT NULL REFERENCES portfolio(id),
+	ts TIMESTAMP NOT NULL,
 	symbol varchar(10) NOT NULL REFERENCES stocks(symbol),
-	CONSTRAINT ts_unique UNIQUE (ts)
+  CONSTRAINT ts_unique UNIQUE (ts)
 );
 
 CREATE TABLE hasstock
 (
-	email varchar(100) NOT NULL REFERENCES stockuser(email),
+	portfolio_id raw(32) NOT NULL REFERENCES portfolio(id),
 	amount NUMBER,
 	symbol varchar(10) NOT NULL REFERENCES stocks(symbol)
 );

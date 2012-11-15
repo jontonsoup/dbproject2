@@ -1,1 +1,1 @@
-30     18     *     *     *     ./home/jmf716/www/portfolio/daily_quote_cron.pl >> /home/jmf716/www/portfolio/log.txt
+30 18 * * * cd /home/jmf716/www/portfolio/ && perl daily_quote_cron.pl

@@ -21,7 +21,7 @@ sub CashHoldings {
     my $cash = $col[0];
     print "<h2>Cash holdings: $col[0]</h2>";
   }
-  $ret = sql_jon_version("select sum(close * amount) as \"TOTAL_VALUE\" from stock_values where ts = (select max(ts) from stocksdaily where stocksdaily.symbol = stock_values.symbol)");
+  $ret = sql_jon_version("select sum(close * amount) as \"TOTAL_VALUE\" from stock_values where portfolio_id = '$portfolio_id' and ts = (select max(ts) from stocksdaily where stocksdaily.symbol = stock_values.symbol)");
   my $total = $ret->[0]->[0];
   print "<h2>Total Portfolio Value: $total</h2>";
 }

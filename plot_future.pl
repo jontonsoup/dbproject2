@@ -80,7 +80,7 @@ if (!defined($type) || $type eq "text" || !($type eq "plot") ) {
   }
 }
 my $time = param("time");
-my $steps = $time + 300;
+my $steps = $time + ($time * 5);
 
 my @rows= `time_series_symbol_project.pl $symbol $time AWAIT $steps ARIMA 2 1 2 | tail -$steps 2>&1`;
  #  foreach $row (@rows){

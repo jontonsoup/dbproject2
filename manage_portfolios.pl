@@ -11,8 +11,10 @@ $ret = sql_jon_version("select id,email from portfolio where email='$login'");
 #print Dumper(@ret);
 print "<table class=\"table table-striped\">";
 print "<thead>";
-print "<tr><td>ID</td><td>User</td>></tr>";
+print "<tr><td>ID</td><td>User</td><td>Cash</td>></tr>";
 print "<tbody>";
+$cashret = 0;
+my $cashport = 0;
 foreach $row (@$ret){
   print "<tr>";
   my $ind = 0;
@@ -20,8 +22,10 @@ foreach $row (@$ret){
     # if it's the ID, insert link
     if ($ind == 0) {
      print "<td><a href=\"portfolio.pl?portfolio_id=$next\" class=\"btn\">$next</a></td>";
+     $cashret = sql_jon_version("select cashholding from (select * from transaction where email='$login' and portfolio_id='$next' order by ts DESC) where rownum<=1");
+     $cashport = $cashret->[0]->[0];
     } else {
-     print "<td>$next</td>";
+     print "<td>$next</td><td>$cashport</td>";
     }
     $ind = $ind + 1;
   }

@@ -240,9 +240,9 @@ print "<body>";
 my $portfolio = param("portfolio");
 print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <div class=\"navbar-inner\">
-<a class=\"brand\" href=\"#\">Portfolioliolio</a>
+<a class=\"brand\" href=\"manage_portfolios.pl\">Portfolioliolio</a>
 <ul class=\"nav\">
-<li ><a href=\"portfolio.pl?portfolio=$portfolio\">Home</a></li>
+<li ><a href=\"manage_portfolios.pl\">Home</a></li>
 <li><a href=\"history.pl\">Transaction History</a></li>
 <li><a href=\"login.pl\">Login</a></li>
 <li><a href=\"register.pl\">Register</a></li>

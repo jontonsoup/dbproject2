@@ -201,6 +201,7 @@ sub sql_jon_version{
 
 
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
+
 	if(param("action") eq "login") {
 		my $user = param("user");
 		my $pass = param("password");
@@ -224,7 +225,17 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 	}
 }
 else {
-	print "Content-type: text/html\n\n";
+	if(param("action") eq "logout") {
+
+		my $cookie=cookie(-name=>"login",
+			-value=>"$user", -expires =>"-10h");
+		push @outputcookies, $cookie;
+
+		print header(-expires=>'now', -cookie=>\@outputcookies);
+	}
+	else{
+		print "Content-type: text/html\n\n";
+	}
 }
 
 
@@ -243,10 +254,15 @@ print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <a class=\"brand\" href=\"manage_portfolios.pl\">Portfolioliolio</a>
 <ul class=\"nav\">
 <li ><a href=\"manage_portfolios.pl\">Home</a></li>
-<li><a href=\"history.pl\">Transaction History</a></li>
-<li><a href=\"login.pl\">Login</a></li>
-<li><a href=\"register.pl\">Register</a></li>
-</ul>
+<li><a href=\"history.pl\">Transaction History</a></li>";
+if(!defined($login)){
+print "<li><a href=\"login.pl\">Login</a></li>
+<li><a href=\"register.pl\">Register</a></li>";
+}
+if(defined($login)){
+	print "<li><a href=\"login.pl?action=logout\">Logout</a></li>";
+}
+print "</ul>
 </div>
 </div>";
 

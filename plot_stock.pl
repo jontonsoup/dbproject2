@@ -83,6 +83,21 @@ if (!defined($type) || $type eq "text" || !($type eq "plot") ) {
 my @rows = ExecStockSQL("2D","select timestamp, close from ".GetStockPrefix()."StocksDaily where symbol=rpad(?,16)",$symbol);
 my $ret = sql_jon_version("select ts, close from stocksdaily where symbol='$symbol'");
 
+$interval = param("interval");
+$counter = 0;
+$mod = 0;
+if($interval eq "Daily"){
+  $mod = 1;
+}
+elsif($interval eq "Weekly"){
+  $mod = 7;
+}
+elsif($interval eq "Monthly"){
+  $mod = 30;
+}
+elsif($interval eq "Yearly"){
+  $mod = 365;
+}
 
 foreach $row (@$ret){
   push @rows, $row;
@@ -93,6 +108,10 @@ foreach $row (@$ret){
 if ($type eq "text") {
   print "<table class=\"table table-striped\">";
   foreach my $r (@rows) {
+    $counter = $counter + 1;
+    if($counter % $mod != 0){
+      next;
+    }
     print "<tr>";
     print "<td>", $r->[0], "</td><td>", $r->[1], "</td>";
     print "</tr>";
@@ -115,8 +134,12 @@ open(GNUPLOT,"| gnuplot") or die "Cannot run gnuplot";
   print GNUPLOT "set output\n";             # output the PNG to stdout
   print GNUPLOT "plot '-' using 1:2 with linespoints\n"; # feed it data to plot
   foreach my $r (@rows) {
-    print GNUPLOT $r->[0], "\t", $r->[1], "\n";
+   $counter = $counter + 1;
+   if($counter % $mod != 0){
+    next;
   }
+  print GNUPLOT $r->[0], "\t", $r->[1], "\n";
+}
   print GNUPLOT "e\n"; # end of data
 
   #

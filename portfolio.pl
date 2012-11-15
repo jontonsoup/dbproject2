@@ -73,14 +73,34 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
       my $cash = $ret->[0]->[0];
       print "holdings: $cash<br>";
 
-      $ret = sql_jon_version("select amount from hasstock where symbol='$symbol' and email='$login'");
-      my $amount_owned = $ret->[0]->[0];
+      $ret = sql_jon_version("select amount from hasstock where symbol = '$symbol' and email='$login'");
+      my $amount_owned = $ret->[0]->[0] or 0;
+      if (! defined $amount_owned) {
+	$amount_owned = 0;
+      }
+
+      print "you have $amount_owned shares of $symbol<br>";
 
       if ($buy_or_sell eq "buy") {
 	# checkif they gave you a number and you've got the moneys
 	if ($amount =~ /[0-9]+/) {
 	  if ($amount * $price <= $cash) {
 	    print "you have enough money!<br>";
+	    my $new_amount;
+	    my $new_holdings;
+
+	    $new_amount = $amount_owned + $amount;
+	    $new_holdings = $cash - ($amount * $price);
+
+	    $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email) values('$symbol', $price, $amount, 'buy', $new_holdings, '$login')");
+	    if ($amount_owned == 0) {
+	      sql_jon_version("insert into hasstock (email, symbol, amount) values ('$login', '$symbol', $new_amount)");
+	    } else {
+	      sql_jon_version("update hasstock set amount=$new_amount where email='$login' and symbol='$symbol'");
+	    }
+
+	    print "New amount: $new_amount<br>";
+	    print "New balance: $new_holdings<br>";
 	    
 	  }
 	  else {
@@ -89,6 +109,8 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 	} else {
 	  print "$amount is not a number, it's a free man!<br>";
 	}
+      } else {
+	print "sell sell sell!";
       }
       
     } else {
@@ -102,6 +124,6 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 
 CashHoldings();
 trade_request();
-get_stocks();
+# get_stocks();
 
 require "footer.pl";

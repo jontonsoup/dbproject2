@@ -16,6 +16,10 @@ BEGIN {
 		$ENV{ORACLE_SID}="CS339";
 		$ENV{LD_LIBRARY_PATH}=$ENV{ORACLE_HOME}."/lib";
 		$ENV{BEGIN_BLOCK} = 1;
+		$ENV{PORTF_DBMS}="oracle";
+		$ENV{PORTF_DB}="cs339";
+		$ENV{PORTF_DBUSER}="jmf716";
+		$ENV{PORTF_DBPASS}="RR62rwno";
 		exec 'env',cwd().'/'.$0,@ARGV;
 	}
 }
@@ -71,7 +75,7 @@ sub getstock{
 						print $key,"\t",$quotes{$symbol,$key},"\n";
 					}
 				}
-				sql_jon_version("insert into stocks values ('$symbol',0,0,0)");
+				sql_jon_version("insert into stocks select '$symbol',0,0,0 from dual where not exists (select 1 from stocks where symbol='$symbol')");
 				sql_jon_version("insert into stocksdaily (symbol,ts,high,low,close,open,volume) values ('$symbol', '$time1','$high','$low','$close','$open','$volume')");
 
 			}

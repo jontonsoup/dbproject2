@@ -163,19 +163,22 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 
 	    # print "New amount: $new_amount<br>";
 	    # print "New balance: $new_holdings<br>";
+      print "<div class=\"alert alert-success\">Success!</div>";
 
 	  }
 	  else {
-	    print "You do not have enough money for that transaction, bru<br>";
+
+	    print "<div class=\"alert alert-error\">You do not have enough money for that transaction, bru</div>";
 	  }
 	} else {
-	  print "$amount is not a number, it's a free man!<br>";
+	  print "<div class=\"alert alert-error\">$amount is not a number, man!</div>";
 	}
       } else {
 	my $new_amount;
 	$new_amount = $amount_owned - $amount;
 	if ($new_amount >= 0) {
-	  print "You'll have $new_amount shares of $symbol left";
+
+	  print "<div class=\"alert alert-success\">You have $new_amount shares of $symbol left</div>";
 	  my $new_holdings = $cash + ($price * $amount);
 	  # add the transaction
 	  sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('$symbol', $price, $amount, 'sell', $new_holdings, '$login', '$portfolio_id')");

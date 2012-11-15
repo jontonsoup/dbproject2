@@ -8,6 +8,6 @@ $symbol=shift;
 $steps=shift;
 $model=join(" ",@ARGV);
 
-$cmd = "get_data.pl --notime --close $symbol | (time_series_predictor_online $steps $model 2>/dev/null) | time_series_evaluator_online $steps";
+$cmd = "get_data_for_predict.pl --notime --close $symbol | (time_series_predictor_online $steps $model 2>/dev/null) | time_series_evaluator_online $steps";
 
 system  $cmd;

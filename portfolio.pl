@@ -54,7 +54,7 @@ sub trade_request {
   hidden(-name=>'portfolio_id', default=>[$portfolio_id]),
   "Stock: ", textfield(-name=>'symbol'), "<br><br>",
   "Shares: ", textfield(-name=>'amount'), "<br><br>",
-  radio_group(-name=>'buy_or_sell', -values=>['buy', 'sell']), "<br><br>";
+  radio_group(-name=>'buy_or_sell', -values=>['Buy ', 'Sell ']), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
   $ret = sql_jon_version("select symbol from cs339.stockssymbols ");
   print "<h3>Available Stocks to Buy</h3>";

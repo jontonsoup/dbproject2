@@ -41,10 +41,13 @@ print "</table>";
 # if post, create a portfolio
 # otherwise, make form
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
+  if (param('cash') eq undef) {
+    print "<h3>You didn't provide an initial cash value!</h3>";
+  } else {
   # get sys_guid() from db and store it in a local variable
   eval {@row=ExecSQL($dbuser, $dbpasswd, "select sys_guid() from dual", undef)};
-  if ($@) { print "error";} else { print "ok"; }
-  print @row->[0]->[0];
+  if ($@) { print "error";} else {  }
+  #print @row->[0]->[0];
   my $portfolio_id = @row->[0]->[0];
    
 
@@ -56,7 +59,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   if ($@) {
     print "error occurred<br> $DBI::errstr<br>";
   } else {
-    print "no error occurred<br>";
+    #print "no error occurred<br>";
   }
 
 
@@ -66,7 +69,9 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   if ($@) {
     print "error occurred<br>";
   } else {
-    print "no error occurred<br>";
+    #print "no error occurred<br>";
+    print "<h3>now, reload</h3>";
+  }
   }
   
 }

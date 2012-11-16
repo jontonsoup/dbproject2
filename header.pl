@@ -253,8 +253,11 @@ print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <div class=\"navbar-inner\">
 <a class=\"brand\" href=\"manage_portfolios.pl\">Portfolioliolio</a>
 <ul class=\"nav\">
-<li ><a href=\"manage_portfolios.pl\">Home</a></li>
-<li><a href=\"history.pl\">Transaction History</a></li>";
+<li ><a href=\"manage_portfolios.pl\">Home</a></li>";
+
+print "<li><a href=\"history.pl\">Transaction History</a></li>
+<li><a href=\"stats.pl\">Statistics</a></li>";
+
 if(!defined($login)){
 print "<li><a href=\"login.pl\">Login</a></li>
 <li><a href=\"register.pl\">Register</a></li>";

@@ -11,7 +11,7 @@ $ret = sql_jon_version("select id,email from portfolio where email='$login'");
 #print Dumper(@ret);
 print "<table class=\"table table-striped\">";
 print "<thead>";
-print "<tr><td>ID</td><td>User</td><td>Cash</td>></tr>";
+print "<tr><td>ID</td><td>User</td><td>Cash</td></tr>";
 print "<tbody>";
 $cashret = 0;
 my $cashport = 0;

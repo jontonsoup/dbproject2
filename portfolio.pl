@@ -9,7 +9,14 @@ if (param('portfolio_id') eq undef) {die;}
 
 my $portfolio_id = param('portfolio_id');
 
-print "<br>Portfolio ID: $portfolio_id<br>";
+my $is_portfolio_related_page = 1;
+
+
+print "<h3>Portfolio ID: $portfolio_id</h3>";
+
+print "<a class=\"btn btn-primary\" href=\"stats.pl?portfolio_id=$portfolio_id\">Statistics About This Portfolio</a>";
+
+print "<hr>";
 
 
 sub CashHoldings {
@@ -20,6 +27,7 @@ sub CashHoldings {
   my $total = $ret->[0]->[0];
   print "<h2>Total Portfolio Value: $total</h2>";
 }
+
 
 sub get_stocks {
   $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
@@ -203,7 +211,9 @@ if($ENV{'REQUEST_METHOD'} eq "POST") {
 }
 
 CashHoldings();
+print "<hr>";
 get_stocks();
+print "<hr>";
 trade_request();
 add_money();
 

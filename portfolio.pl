@@ -73,7 +73,7 @@ sub add_money {
       }
       elsif($add_or_subtract eq "Deposit"){
         $new_holdings = $cash + $amount;
-        $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('cash', 0, $amount, 'Withdraw', $new_holdings, '$login', '$portfolio_id')");
+        $ret = sql_jon_version("insert into transaction (symbol, price, quantity, type, cashholding, email, portfolio_id) values('cash', 0, $amount, 'Deposit', $new_holdings, '$login', '$portfolio_id')");
 	print "<h3>Done!</h3>";
       }
     }

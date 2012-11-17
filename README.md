@@ -8,7 +8,7 @@
   - change queries for new schema DONE
 - buy/sell of stocks DONE
 - past/future performance DONE
-- portfolio stats
+- portfolio stats - doing in stats branch
   - coeff of var and beta for each stock
   - covariance matrix of stocks in portfolio
 - strategy eval

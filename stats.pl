@@ -15,9 +15,7 @@ my $portfolio_id = param('portfolio_id');
 # This page displays statistics about a given portfolio
 
 print "
-<h2>Statistics about Portfolio</h1>
-
-<h3>Coefficient of Variance and Beta of Stocks</h3>
+<h2>Statistics about Portfolio <small>($portfolio_id)</small></h1>
 ";
 
 
@@ -67,18 +65,18 @@ sub replace {
 
 
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
-  print "<h3>Coefficient of Variance</h3>";
   my $from = param('from');
   my $to = param('to');
   my @symbols = (); 
   
   # now that we have time range, calculate coeff of variance for each stock
+  print "<h3>Coefficient of Variance & Beta  <small>(\"$from\" to \"$to\")</small></h3>";
 
   $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
 
   print "<table class=\"table table-striped\">";
   print "<thead>";
-  print "<tr><td>Stock</td><td>Coeff. of Var.</td></tr>";
+  print "<tr><td>Stock</td><td>Mean</td><td>StdDev</td><td>Coeff. of Var.</td><td>Beta</td></tr>";
   print "<tbody>";
   foreach $row (@$ret){
     print "<tr>";
@@ -87,9 +85,13 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
       if ($ind == 0) {
         push(@symbols, $next);
         print "<td>$next</td>";
-        @coeffvar =  split(" ", `./get_info_cvb.pl $next --from "$from" --to "$to"`);
-        #print "<b>$coeffvar</b>";
-        print "<td>@coeffvar[$#coeffvar]</td>";
+        @res =  split(" ", `./get_info_cvb.pl $next --from "$from" --to "$to"`);
+        $coeffvar = sprintf("%.3f", @res[$#res]);
+        $mean = sprintf("%.3f", @res[$#res-4]);
+        $stddev = sprintf("%.3f", @res[$#res-3]);
+        print "<td>$mean</td>";
+        print "<td>$stddev</td>";
+        print "<td>$coeffvar</td>";
       }
       $ind = $ind + 1;
     }

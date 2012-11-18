@@ -103,7 +103,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   print "<hr>";
 
   print "<h3>Covariance Matrix</h3>";
-  $out = `./get_covar.pl --from "$from" --to "$to" --corrcoeff @symbols`;
+  $out = `./get_covar_all.pl --from "$from" --to "$to" --corrcoeff @symbols`;
   print replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", replace("\n", "<br>", $out));
 
 } else {

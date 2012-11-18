@@ -64,23 +64,26 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
   print "<h3>Coefficient of Variance</h3>";
   my $from = param('from');
   my $to = param('to');
-  print join("\t", split(" ", `./get_info_cvb.pl AAPL --from "$from" --to "$to"`));
+  #print join("\t", split(" ", `./get_info_cvb.pl A --from "$from" --to "$to"`));
   
   $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
 
-  print "<h2>Current Portfolio</h2>";
   print "<table class=\"table table-striped\">";
   print "<thead>";
-  print "<tr><td>Stock</td><td># Shares</td><td>Past Performance</td><td>Future Performance</td><td>Strategy</td></tr>";
+  print "<tr><td>Stock</td><td>Coeff. of Var.</td></tr>";
   print "<tbody>";
   foreach $row (@$ret){
     print "<tr>";
+    my $ind = 0;
     foreach $next (@$row){
-      print "<td>$next</td>";
+      if ($ind == 0) {
+        print "<td>$next</td>";
+        @coeffvar =  split(" ", `./get_info_cvb.pl $next --from "$from" --to "$to"`);
+        #print "<b>$coeffvar</b>";
+        print "<td>@coeffvar[$#coeffvar]</td>";
+      }
+      $ind = $ind + 1;
     }
-    print "<td><a class=\"btn\" href=\"pastperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
-    print "<td><a class=\"btn\" href=\"futureperformance.pl?stock=" . $row->[0] . "\">Go</a></td>";
-    print "<td><a class=\"btn\" href=\"strategy.pl?stock=" . $row->[0] . "\">Go</a></td>";
     print "</tr>";
   }
 

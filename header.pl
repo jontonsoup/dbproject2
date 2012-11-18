@@ -265,6 +265,7 @@ print "<ul class='nav pull-right'>
 </ul>";
 }
 if(defined($login)){
+print "<li><a href=\"manage_portfolios.pl\">Manage Portfolios</a></li>";
 print "<li><a href=\"history.pl\">Transaction History</a></li>";
 print "</ul>";
 	print "<ul class='nav pull-right'><li><a href=\"login.pl?action=logout\">Logout</a></li></ul>";
@@ -275,7 +276,7 @@ print "</ul>
 
 print "<div class=\"container\">";
 
-print "<br><br><br><br>";
+print "<br>";
 
 #print "<div class=\"span10\">";
 

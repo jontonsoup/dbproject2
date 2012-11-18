@@ -65,6 +65,14 @@ sub replace {
 
 
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
+
+  print start_form(-name=>'TimeFrame', -type=>"post", -class=>'form'),
+  h2('TimeFrame'), "<fieldset>",
+  hidden(-name=>'portfolio_id',default=>["$portfolio_id"]),
+  "From: ",textfield(-name=>'from', -placeholder=>'8 years ago'),"<br><br>",
+  "To: ",textfield(-name=>'to', -placeholder=>'7 years ago'), "<br><br>";
+  print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+
   my $from = param('from');
   my $to = param('to');
   my @symbols = (); 
@@ -108,11 +116,11 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 
 } else {
   
-  print start_form(-name=>'TimeFrame', -type=>"post"),
+  print start_form(-name=>'TimeFrame', -type=>"post", -class=>'form'),
   h2('TimeFrame'), "<fieldset>",
   hidden(-name=>'portfolio_id',default=>["$portfolio_id"]),
-  "From: ",textfield(-name=>'from'),"<br><br>",
-  "To: ",textfield(-name=>'to'), "<br><br>";
+  "From: ",textfield(-name=>'from', -placeholder=>'8 years ago'),"<br><br>",
+  "To: ",textfield(-name=>'to', -placeholder=>'7 years ago'), "<br><br>";
   print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
   
 }

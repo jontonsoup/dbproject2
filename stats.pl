@@ -59,13 +59,21 @@ sub get_stocks {
 
 #print join("\t", split(" ", `./get_info_cvb.pl AAPL --from "8 years ago" --to "7 years ago"`));
 
+sub replace {
+  my ($from,$to,$string) = @_;
+  $string =~s/$from/$to/ig;
+  return $string;
+}
+
 
 if ($ENV{'REQUEST_METHOD'} eq "POST") {
   print "<h3>Coefficient of Variance</h3>";
   my $from = param('from');
   my $to = param('to');
-  #print join("\t", split(" ", `./get_info_cvb.pl A --from "$from" --to "$to"`));
+  my @symbols = (); 
   
+  # now that we have time range, calculate coeff of variance for each stock
+
   $ret = sql_jon_version("select symbol, amount from stocks natural join hasstock where portfolio_id='$portfolio_id'");
 
   print "<table class=\"table table-striped\">";
@@ -77,6 +85,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
     my $ind = 0;
     foreach $next (@$row){
       if ($ind == 0) {
+        push(@symbols, $next);
         print "<td>$next</td>";
         @coeffvar =  split(" ", `./get_info_cvb.pl $next --from "$from" --to "$to"`);
         #print "<b>$coeffvar</b>";
@@ -86,10 +95,14 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
     }
     print "</tr>";
   }
-
-
   print "</tbody>";
   print "</table>";
+
+  print "<hr>";
+
+  print "<h3>Covariance Matrix</h3>";
+  $out = `./get_covar.pl --from "$from" --to "$to" --corrcoeff 1 @symbols`;
+  print replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;", replace("\n", "<br>", $out));
 
 } else {
   

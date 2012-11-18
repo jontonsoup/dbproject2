@@ -70,3 +70,10 @@ SELECT symbol, max(ts) as "TS" from stocksdaily group by symbol;
 create VIEW most_recent_stockinfo
 as 
 SELECT * from stocksdaily natural join most_recent_timestamp where close is not null;
+
+
+create VIEW random_stocks
+as 
+select * from stocksdaily
+  order by dbms_random.value;
+                 

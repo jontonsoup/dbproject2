@@ -100,6 +100,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
         print "<td>$mean</td>";
         print "<td>$stddev</td>";
         print "<td>$coeffvar</td>";
+        print "<td>", `./get_info_beta.pl $next --from "$from" --to "$to"`, "</td>";
       }
       $ind = $ind + 1;
     }

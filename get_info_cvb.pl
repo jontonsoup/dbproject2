@@ -39,8 +39,21 @@ while ($symbol=shift) {
 
   ($n,$mean,$std,$min,$max) = ExecStockSQL("ROW",$sql);
 
+  $sql2 = "select regr_slope(close, max) from 
+           (select symbol, close, timestamp from ".GetStockPrefix()."StocksDaily
+            union all
+            select symbol, close, ts as timestamp from stocksdaily)
+            where symbol='$symbol'
+            ";
+  $sql2.= " and timestamp>=$from" if $from;
+  $sql2.= " and timestamp<=$to" if $to;
+             
+         
+  #$beta = ExecStockSQL("ROW",$sql2);
+  $beta = 0;
+
   if ($n != 0) {
-    print join("\t",$symbol,$field, $n, $mean, $std, $min, $max, $std/$mean),"\n";
+    print join("\t",$symbol,$field, $n, $mean, $std, $min, $max, $std/$mean ),"\n";
   } else {
     print "$n results\n";
   }

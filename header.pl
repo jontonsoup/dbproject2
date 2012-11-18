@@ -257,15 +257,17 @@ print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <ul class=\"nav\">
 <li ><a href=\"manage_portfolios.pl\">Home</a></li>";
 
-print "<li><a href=\"history.pl\">Transaction History</a></li>
-<li><a href=\"stats.pl\">Statistics</a></li>";
-
 if(!defined($login)){
-print "<li><a href=\"login.pl\">Login</a></li>
-<li><a href=\"register.pl\">Register</a></li>";
+print "</ul>";
+print "<ul class='nav pull-right'>
+<li><a href=\"login.pl\">Login</a></li>
+<li><a href=\"register.pl\">Register</a></li>
+</ul>";
 }
 if(defined($login)){
-	print "<li><a href=\"login.pl?action=logout\">Logout</a></li>";
+print "<li><a href=\"history.pl\">Transaction History</a></li>";
+print "</ul>";
+	print "<ul class='nav pull-right'><li><a href=\"login.pl?action=logout\">Logout</a></li></ul>";
 }
 print "</ul>
 </div>

@@ -1,4 +1,4 @@
-print "</div>";
+# this is the hero-unit ending tag from before #print "</div>";
 print "</div>";
 print hr, p, hr,p, h2('Debugging Output');
 print h3('Parameters');

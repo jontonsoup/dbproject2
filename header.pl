@@ -239,11 +239,13 @@ else {
 }
 
 
-
+print "<!DOCTYPE html>";
 print "<html>";
 print "<head>";
 print "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js\"></script>";
 print "<link href=\"\/\/netdna.bootstrapcdn.com\/twitter-bootstrap\/2.1.1\/css/bootstrap-combined.min.css\" rel=\"stylesheet\">";
+print "<link href='http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css' rel='stylesheet'>";
+print "<style>input.input-block-level { padding: 20px; }</style>";
 print "<title>Portfolio</title>";
 print "</head>";
 
@@ -271,9 +273,9 @@ print "</ul>
 
 print "<div class=\"container\">";
 
+print "<br><br><br><br>";
 
-
-print "<div class=\"hero-unit\">";
+#print "<div class=\"span10\">";
 
 if(defined($login)){
 }

@@ -22,19 +22,27 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 
 	else {
 
-    print start_form(-name=>'Login', -type=>"post"),
-    h2('Login!'), "<fieldset>",
+    print "<div class='row'>";
+
+    print "<div class='span6'>";
+    print start_form(-name=>'Login', -type=>"post", -class=>"form-signin"),
+    h2('Login'), "<fieldset>",
     hidden(-name=>'action',default=>['login']),
-    "Name: ",textfield(-name=>'user'),"<br><br>",
-    "Password: ",password_field(-name=>'password'), "<br><br>";
-    print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
+    textfield(-name=>'user', -placeholder=>'Name', -class=>'input-block-level'),"<br><br>",
+    password_field(-name=>'password', -placeholder=>'Password', -class=>'input-block-level'), "<br><br>";
+    print "<input type=\"submit\" class=\"btn btn-large btn-primary\">","</fieldset>";
     print "<br><br>";
     print "</form>";
-    print start_form(-name=>'Register', -type=>"post"),
-    h2('Register!'), "<fieldset>",
-    "Name: ",textfield(-name=>'user'),"<br><br>",
-    "Password: ",password_field(-name=>'password'), "<br><br>";
-    print "<input type=\"submit\" class=\"btn btn-primary\">","</fieldset>";
-
+    print "</div>
+    <div class='span6'>
+    ";
+    print start_form(-name=>'Register', -type=>"post", -class=>"form-signin"),
+    h2('Register'), "<fieldset>",
+    textfield(-name=>'user', -placeholder=>'Name', -class=>'input-block-level'),"<br><br>",
+    password_field(-name=>'password', -placeholder=>'Password', -class=>'input-block-level'), "<br><br>";
+    print "<input type=\"submit\" class=\"btn btn-large btn-primary\">","</fieldset>";
+    print "</div>";
+    
+    print "</div>";
 	}
 	require "footer.pl";

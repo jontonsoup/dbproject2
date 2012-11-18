@@ -76,7 +76,7 @@ if ($ENV{'REQUEST_METHOD'} eq "POST") {
 
   print "<table class=\"table table-striped\">";
   print "<thead>";
-  print "<tr><td>Stock</td><td>Mean</td><td>StdDev</td><td>Coeff. of Var.</td><td>Beta</td></tr>";
+  print "<tr><th>Stock</th><th>Mean</th><th>StdDev</th><th>Coeff. of Var.</th><th>Beta</th></tr>";
   print "<tbody>";
   foreach $row (@$ret){
     print "<tr>";

@@ -39,7 +39,7 @@ while ($symbol=shift) {
       (select symbol, close, timestamp from ".GetStockPrefix()."StocksDaily
         union all
         select symbol, close, ts as timestamp from stocksdaily)
-        where symbol in ('A', 'AAPL','CCBC','DVEI','SOYL', 'HUSA') 
+        where symbol in ('AAPL','CCBC','DVEI','SOYL') 
           and timestamp>=$from and timestamp<=$to) t2
     on t1.timestamp = t2.timestamp
     ";

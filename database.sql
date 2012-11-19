@@ -77,3 +77,16 @@ as
 select * from stocksdaily
   order by dbms_random.value;
                  
+
+create VIEW random_cs339_stocks
+as
+select * from CS339.StocksDaily
+order by dbms_random.value;
+
+
+create VIEW all_stocks
+as 
+select symbol, close, timestamp from CS339.StocksDaily
+union all
+select symbol, close, ts as timestamp from stocksdaily;
+

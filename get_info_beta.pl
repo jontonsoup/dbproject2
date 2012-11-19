@@ -35,12 +35,12 @@ while ($symbol=shift) {
         select symbol, close, ts as timestamp from stocksdaily)
         where symbol='$symbol' and timestamp>=$from and timestamp<=$to) t1
     join 
-    (select close, timestamp from
+    (select avg(close) as close, timestamp from 
       (select symbol, close, timestamp from ".GetStockPrefix()."StocksDaily
-        union all
-        select symbol, close, ts as timestamp from stocksdaily)
-        where symbol in ('AAPL','CCBC','DVEI','SOYL') 
-          and timestamp>=$from and timestamp<=$to) t2
+       union all
+       select symbol, close, ts as timestamp from stocksdaily)
+      where timestamp>=$from and timestamp<=$to
+      group by timestamp) t2
     on t1.timestamp = t2.timestamp
     ";
   

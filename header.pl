@@ -2,11 +2,11 @@
 
 use CGI;
 use CGI qw(:standard);
-use CGI::Carp qw(fatalsToBrowser);
+use CGI::Carp;
 use DBI;
 use Time::ParseDate;
 
-$debug=1;
+$debug=0;
 @sqlinput=();
 @sqloutput=();
 $dbuser="jmf716";
@@ -253,9 +253,9 @@ print "<body>";
 my $portfolio = param("portfolio");
 print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <div class=\"navbar-inner\">
-<a class=\"brand\" href=\"manage_portfolios.pl\">Portfolioliolio</a>
+<a class=\"brand\" href=\"home.pl\">Portfolioliolio</a>
 <ul class=\"nav\">
-<li ><a href=\"manage_portfolios.pl\">Home</a></li>";
+<li ><a href=\"home.pl\">Home</a></li>";
 
 if(!defined($login)){
 print "</ul>";

@@ -30,8 +30,7 @@ CREATE TABLE stocksdaily
 	low NUMBER,
 	close NUMBER,
 	volume NUMBER,
-	ts NUMBER,
-	PRIMARY KEY (ts)
+	ts NUMBER
 );
 
 CREATE TABLE transaction

@@ -13,8 +13,6 @@ $dbuser="jmf716";
 $dbpasswd="RR62rwno";
 
 
-$dbuser="gsi669";
-$dbpasswd="z1OlkliU6";
 
 
 #

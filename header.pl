@@ -255,7 +255,8 @@ print "<div class=\"navbar navbar-inverse navbar-static-top\">
 <div class=\"navbar-inner\">
 <a class=\"brand\" href=\"home.pl\">Portfolioliolio</a>
 <ul class=\"nav\">
-<li ><a href=\"home.pl\">Home</a></li>";
+<li ><a href=\"home.pl\">Home</a></li>
+<li><a href='http://jongnarmax.wordpress.com/'>Design Docs</a></li>";
 
 if(!defined($login)){
 print "</ul>";
